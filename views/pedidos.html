@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Olga Pastelería. Las mejores tortas en tu mesa - Pastelería clásica y vegana a pedido - Hacé tu pedido, entregas y envíos en Avellaneda CABA por mensajería">
+<meta name="keywords"  content="pasteleria, pastel, pasteles, tortas, postres, postre, tortas personalizadas, tortas personalizadas zona sur, tortas personalizadas a domicilio, tortas personalizadas en avellaneda, tortas a pedido">
+<title>Olga Pastelería - Hacé tu pedido</title>
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous">
+<!--Google fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--Fin google fonts-->
+
+<link rel="stylesheet" type="text/css" href="../assets/css/pruebacss.css">
+
+</head>
+
+
+<body>
+
+<header class="customHeadmargin">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navcolorPersonalizado">
+        <a class="navbar-brand" href="../index.html">
+        <img src="../media/logohomeicon.png" width="85" height="85" title="Logo Home Icon" alt="Logo Olga Pasteleria">
+        </a>
+
+<!--Burger button-->
+        <button class="navbar-toggler colorsBurger" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+<!--Fin burger button-->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="recetas.html">Recetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Pedidos<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quienesolga.html">Quién es Olga</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Búsqueda" aria-label="Search">
+              <button class="searchButton rounded-circle btn my-2 my-sm-0" type="submit">
+                <img src="../media/searchicon.png" width="34" height="34" title="Search Icon" alt="Search">
+              </button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<main role="main">
+
+<div class="container">
+
+<!--form-->
+<!--alert-->
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>No olvides elegir bien las porciones. Te contactaré por whatsapp cuando me llegue tu pedido para confirmar todo!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<!--start form-->
+  <div class="row no-gutters">
+    <form action="siteorders.html" method="post" class="col-md-7 mb-3">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="nombre_apellido">Nombre y apellido</label>
+        <input type="text" class="form-control" id="nombre_apellido" placeholder="Nombre y apellido">
+      </div>
+      <div class="form-group col-md-5">
+        <label for="email">Dejá tu email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="email@ejemplo.com">
+      </div>
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="aceptaconfirmar" name="aceptaconfirmar" value="1">
+      <label class="form-check-label" for="aceptaconfirmar">Recibir confirmación del pedido por email</label>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="listadoproductos">Elegí el postre que te interesa</label>
+        <select multiple class="form-control" id="listadoproductos">
+          <option>Lunettes</option>
+          <option>Torta de Manzana</option>
+          <option>Alfajores de Maicena</option>
+          <option>Scones de queso</option>
+          <option>Panes Saborizados</option>
+        </select>
+      </div>
+      <div class="form-group col-md-5">
+        <label for="sizefordessert">Tamaño de la porción</label>
+        <select class="form-control" id="sizefordessert">
+          <option value="standard">Regular (torta 8 porciones)</option>
+          <option value="individual">Individual</option>
+          <option value="extralarge">XL (torta 12 porciones)</option>
+        </select>
+      </div>
+    </div>
+      <div class="form-row">
+        <div class="form-group col-md-11">
+          <label for="shippingselect">Forma de envío</label>
+          <select class="form-control" id="shippingselect">
+            <option value="domicilio">Envío a domicilio (consultar precio)</option>
+            <option value="entrega">Entrega en Avellaneda GRATIS</option>
+            <option value="mensajeria">Mensajería/Rappi/Glovo</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-11">
+          <label for="notasadicionales">Dejanos un comentario sobre lo que necesites del pedido!</label>
+          <textarea class="form-control" id="notasadicionales" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="form-row">
+      <button type="submit" class="btn btn-secondary colorsInbutton col-md-11">Enviar</button>
+      </div>
+
+
+    </form>
+    <!--end form-->
+    <div class="col-md-5">
+      <div class="card card-body">
+        <h4 class="card-title">Cómo hago mi pedido?</h4>
+        <div class="card-text">
+          <ul class="list-group list-group-flush mb-3">
+            <li class="list-group-item">1. Revisá nuestro <a href="catalogo.html" target="_blank">catálogo</a></li>
+            <li class="list-group-item">2. Completá el formulario en esta página</li>
+            <li class="list-group-item">3. Me contactaré para confirmarte los detalles</li>
+          </ul>
+          <p><small>Los envíos por Rappi/Glovo son solo en CABA/Avellaneda centro.</small></p>
+          <p><small>Los costos de envío son confirmados una vez que hagas en pedido.</small></p>
+          <p><small>Todos los pedidos deben realizarse con 72 hs. de anticipación (varía según el producto y si es personalizado).</small></p>
+          <p><small>Si preferís comunicarte directamente, podés escribirme por <a href="https://api.whatsapp.com/send?phone=5491153438311&text=Hola!%20Me%20interesa%20saber%20m%C3%A1s%20sobre%20tus%20productos." target="_blank">Whatsapp</a>.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--end container-->
+
+
+<hr class="dividerHeader">
+
+
+<!--footer-->
+  <footer class="container">
+    <p class="float-right">
+      <a href="#">
+        <img src="../media/chevron-upwards-arrow.png" width="35" height="35" title="Back to top" alt="Back to top icon">
+      </a>
+    </p>
+    <p>&copy; 2021 All rights reserved &middot;
+      <a href="https://www.instagram.com/olga.pasteleria/">
+        <img src="../media/igicon.png" width="35" height="35" title="Instagram" alt="Instagram icon">
+      </a>
+      &middot;
+      <a href="https://api.whatsapp.com/send?phone=5491153438311&text=Hola!%20Me%20interesa%20saber%20m%C3%A1s%20sobre%20tus%20productos.">
+        <img src="../media/whatsappicon.png" width="35" height="35" title="Whatsapp" alt="Whatsapp icon">
+      </a>
+    </p>
+  </footer>
+<!--end footer-->
+
+
+</main>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+        
+</body>
+</html>

@@ -1,0 +1,140 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5F5F3;
+    color: #5a5a5a;
+    .dividerHeader {  /*separador presente en todas las páginas*/
+        margin: 5rem 0; 
+    }
+}
+
+/*botones Ver Recetas/Cerrar Modal/Ver preparación*/
+.btn-secondary {
+    background-color: #1A1108;
+    color: #F5F5F3;
+    font-weight: bolder;
+    border-style: none;
+    box-shadow: none!important;
+}
+.btn-secondary:active {
+    background-color: #1a1108b6!important;
+}
+.btn-secondary:hover {
+    background-color: #1a1108b6;
+}
+.btn-secondary:focus {
+    background-color: #1a1108b6;
+}
+
+header {
+    margin-bottom: 9rem;
+    nav {
+        background-color: #1A1108;
+    }
+    button { /*burger icon*/
+        background-color: #1a1108b6;  
+        border-color: #1a1108b6;
+
+    }
+    button:hover {
+        background-color: #59524c;
+    } /*fin burger icon*/
+}
+.searchButton {
+    padding: 0;
+    margin:0;
+    border: solid #FFFFFF medium;
+}
+
+/*card decks*/
+.card-deck {
+    .card {
+        text-align: center;
+        div {
+            background-color: #ffffff;
+            button {
+                a { /*aplica solo al link incluido en la card del index, que no es un modal*/
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+    }
+}
+
+/*clases del index*/
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .featContent-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+  /*resp css featcontent en index*/
+  @media (min-width: 40em) {
+    .featContent-heading {
+      font-size: 50px;
+    }
+  }
+  @media (min-width: 62em) {
+    .featContent {
+      margin: auto 8rem auto 8rem;
+    }
+    .featContent-heading {
+      margin-top: 2rem;
+    }
+  }
+
+/*recetas.html*/
+.tabdeRecetas {
+    text-align: center;
+    a {
+        border-style: none;
+        box-shadow: none;
+    }
+    a.active {
+        background-color: #1A1108;
+        font-weight: bolder;
+        border-style: none;
+    }
+    a:hover{
+        background-color:#1a1108b6;
+        color:#F5F5F3;
+
+    }
+}
+/*solo para cambiar texto de cards en el tabpane de Recetas*/
+.tab-pane {
+    .card {
+        text-align: left;
+    }
+}
+
+/*start div en quienesolga.html*/
+.olgaga {
+    div {
+        h4 {
+            text-align: center;
+            margin-bottom: 1.5em;
+        }
+        h6 {
+            padding: 3em;
+        }
+    }
+}
+
+
+
+  /*end div de quienesolga.html*/
