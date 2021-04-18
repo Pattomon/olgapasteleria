@@ -2,52 +2,72 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #F5F5F3;
-  color: #5a5a5a; }
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../../media/textures/wall-bg.svg);
+  -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+  background-color: #ffffffce;
+  color: #1a1108; }
+  body a {
+    color: #1a1108;
+    font-weight: bolder;
+  }
+
+    body a:hover {
+      color:#1a1108bd;}
   body .dividerHeader {
     /*separador presente en todas las páginas*/
-    margin: 5rem 0; }
+    margin: 5rem 7rem 5rem 7rem;
+    border-width: 0.2rem;
+    border-color:#1A1108;}
 
 /*botones Ver Recetas/Cerrar Modal/Ver preparación*/
 .btn-secondary {
   background-color: #1A1108;
-  color: #F5F5F3;
+
+  color: #ffffff;
   font-weight: bolder;
   border-style: none;
   box-shadow: none !important; }
 
 .btn-secondary:active {
-  background-color: #1a1108b6 !important; }
+  background-color: #57392ece !important; }
 
 .btn-secondary:hover {
-  background-color: #1a1108b6; }
+  background-color: #57392ece; }
 
 .btn-secondary:focus {
   background-color: #1A1108; }
 
+
 header {
-  margin-bottom: 9rem;
-  /*fin burger icon*/ }
+  margin-bottom: 9rem;}
   header nav {
-    background-color: #1A1108; }
+    background-color: #ffffff; 
+    border-bottom: solid 0.2rem #000000;}
   header button {
-    /*burger icon*/
     background-color: #1a1108b6;
     border-color: #1a1108b6; }
   header button:hover {
     background-color: #59524c; }
 
-.searchButton {
-  padding: 0;
-  margin: 0;
-  border: solid #FFFFFF medium; }
+
+  .nav-item {
+    font-family: 'Orelega One', cursive;
+  font-size: larger;}
+    .nav-item a {
+      font-weight: inherit;}
 
 /*card decks*/
 .card-deck .card {
-  text-align: center; }
+  text-align: center; 
+}
   .card-deck .card div {
-    background-color: #ffffff; }
+    background-color: #ffffff;}
+    .card-deck .card div .card-title {
+      font-family: 'Orelega One', cursive; }
     .card-deck .card div button a {
       /*aplica solo al link incluido en la card del index, que no es un modal*/
       text-decoration: none;
