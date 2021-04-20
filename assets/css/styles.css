@@ -5,17 +5,16 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-image: url(../../media/textures/wall-bg.svg);
   -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: #ffffffce;
   color: #1a1108; }
   body a {
     color: #1a1108;
     font-weight: bolder;
-  }
-
-    body a:hover {
+  } 
+  body a:hover {
       color:#1a1108bd;}
   body .dividerHeader {
     /*separador presente en todas las páginas*/
@@ -25,40 +24,38 @@ body {
 
 /*botones Ver Recetas/Cerrar Modal/Ver preparación*/
 .btn-secondary {
-  background-color: #1A1108;
-
-  color: #ffffff;
+  background-color:#1A1108;
+  color:#ffffff;
   font-weight: bolder;
   border-style: none;
   box-shadow: none !important; }
 
 .btn-secondary:active {
-  background-color: #57392ece !important; }
+  background-color:#57392ece !important; }
 
 .btn-secondary:hover {
-  background-color: #57392ece; }
+  background-color:#57392ece; }
 
 .btn-secondary:focus {
-  background-color: #1A1108; }
+  background-color:#1A1108; }
 
 
 header {
   margin-bottom: 9rem;}
   header nav {
-    background-color: #ffffff; 
-    border-bottom: solid 0.2rem #000000;}
-  header button {
-    background-color: #1a1108b6;
-    border-color: #1a1108b6; }
-  header button:hover {
-    background-color: #59524c; }
-
-
-  .nav-item {
-    font-family: 'Orelega One', cursive;
+    background-color: #ffffff;
+    border-bottom: solid 0.2rem #000000;} 
+    header button:hover {
+    background-color:#ebebeb; }
+.navbar {
+  color: black;
+}
+.nav-item {
+  font-family: 'Orelega One', cursive;
   font-size: larger;}
-    .nav-item a {
-      font-weight: inherit;}
+.nav-link {
+  font-weight: normal;
+}
 
 /*card decks*/
 .card-deck .card {
@@ -127,7 +124,7 @@ header {
   right: 25px;
   width: 60px;
   height: 60px;
-  background-color: #25d366;
+  background-color:#25d366;
   cursor: pointer;
   display: flex;
   justify-content: center;
