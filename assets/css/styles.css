@@ -51,7 +51,7 @@ header {
   color: black;
 }
 .nav-item {
-  font-family: 'Orelega One', cursive;
+  font-family: 'Ubuntu', sans-serif;
   font-size: larger;}
 .nav-link {
   font-weight: normal;
@@ -64,7 +64,7 @@ header {
   .card-deck .card div {
     background-color: #ffffff;}
     .card-deck .card div .card-title {
-      font-family: 'Orelega One', cursive; }
+      font-family: 'Ubuntu', sans-serif; }
     .card-deck .card div button a {
       /*aplica solo al link incluido en la card del index, que no es un modal*/
       text-decoration: none;
