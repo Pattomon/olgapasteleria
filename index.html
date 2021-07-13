@@ -7,138 +7,124 @@
 <meta name="description" content="Olga Pastelería. Las mejores tortas en tu mesa - Pastelería clásica y vegana a pedido - Tortas personalizadas - Entregas y envíos en Avellaneda y CABA">
 <meta name="keywords"  content="pasteleria, pastel, pasteles, tortas, postres, postre, tortas personalizadas, tortas personalizadas zona sur, tortas personalizadas a domicilio, tortas personalizadas en avellaneda, tortas a pedido, pedido tortas zona sur, pedidos CABA">
 <title>Olga Pastelería - Las mejores tortas en tu mesa</title>
-<link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <!--Google fonts-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 <!--Fin google fonts-->
-
-<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css"> <!--stylesheet-->
 
 </head>
 
 
 <body>
-
   <header>
-    <nav class="navbar navbar-expand-md fixed-top">
-        <a class="navbar-brand" href="#">
-        <img src="media/logotransparente.svg" width="95" height="95" title="Logo Home Icon" alt="Logo Olga Pasteleria">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top"> <!-- Fixed navbar -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="media/logotransparente.svg" width="95" height="95" title="Logo Home Icon" alt="Logo Olga Pasteleria">
         </a>
-
-<!--Burger button-->
-        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-<!--Fin burger button-->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./views/recetas.html">Recetas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./views/catalogo.html">Catálogo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./views/pedidos.html">Pedidos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./views/quienesolga.html">Quién es Olga</a>
-                </li>
-            </ul>
-            <form class="form-inline mt-2 mt-md-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Búsqueda" aria-label="Search">
-              <button class="rounded-circle btn my-2 my-sm-0" type="submit">
-                <img src="media/icons/search-loupe.svg" width="33" height="33" title="Search Icon" alt="Search">
-              </button>
-            </form>
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Página Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./views/recetas.html">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./views/catalogo.html">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./views/pedidos.html">Pedidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./views/quienesolga.html">Quién es Olga</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-</header>
+  </header>
+
+  <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="media/bannersmisc/berrycake.png" title="Berrycake banner" alt="Berrycake banner">
+        <div class="container">
+          <div class="carousel-caption bg-light p-3 rounded text-start">
+            <h1>Deleitate con mis recetas</h1>
+            <p>Podés ver algunas de mis recetas más deliciosas</p>
+            <p><a class="btn btn-lg btn-secondary" href="./views/recetas.html">Entrá a ver!</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/bannersmisc/budinesss.png" title="Sorteo Budines banner" alt="Sorteo budines banner">
+        <div class="container">
+          <div class="carousel-caption bg-light p-3 rounded">
+            <h1>Super sorteo!</h1>
+            <p>Este mes sorteamos budines a quienes pidan hasta el día 12/06!</p>
+            <button type="button" class="btn btn-lg btn-secondary" data-bs-toggle="modal" data-bs-target="#sorteoMod">
+              Registrate
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="media/bannersmisc/salty.png" title="Catálogo banner" alt="Catálogo banner">
+        <div class="container">
+          <div class="carousel-caption bg-light p-3 rounded text-end">
+            <h1>Nuestro catálogo disponible para vos!</h1>
+            <p>Tentate con nuestros productos y pedimos lo que más te tiente</p>
+            <p><a class="btn btn-lg btn-secondary" href="./views/catalogo.html">Mirá nuestro catálogo!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
 
 <main role="main">
 
 <div class="container">
 
-
-<!--3 col w/links/cards -->
-  <div class="card-deck">
-    <div class="card">
-      <img class="card-img-top" src="media/imgcolumn-1.jpg" title="Rifa Solidaria" alt="Rifa">
-      <div class="card-body">
-        <h4 class="card-title">Rifa solidaria!</h4>
-        <p class="card-text">Con tu compra con envío a domicilio, participás de una rifa solidaria para ayudar a los mejores amigos del hombre.</p>
-      </div>
-      <div class="card-footer">
-        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#cardsindex1">
-        Ver más</button>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="media/imgcolumn-2.jpg" title="Recetas" alt="Recetas">
-      <div class="card-body">
-        <h4 class="card-title">Mis Recetas!</h4>
-        <p class="card-text">Las recetas de las tortas más pedidas para que las hagas en tu casa, para tus seres queridos!</p>
-      </div>
-      <div class="card-footer">
-        <button type="button" class="btn btn-secondary">
-          <a href="./views/recetas.html">Ver más</a></button>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="media/imgcolumn-3.jpg" title="Sorteo" alt="Sorteo">
-      <div class="card-body">
-        <h4 class="card-title">Sorteo</h4>
-        <p class="card-text">Sorteo por mi cumple! Participá con tu compra</p>
-      </div>
-      <div class="card-footer">
-        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#cardsindex3">
-        Ver más</button>
-      </div>
-    </div>
-  </div>
-<!--end 3 col w/links/cards -->
-
 <!--start MODALDEFAULT-->
-<div class="modal fade" id="cardsindex1" tabindex="-1" aria-labelledby="cardsindex1" aria-hidden="true">
+<div class="modal fade" id="sorteoMod" tabindex="-1" aria-labelledby="sorteoMod" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="cardsindex1">Rifa solidaria!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        La rifa finalizó, estaré contactando al ganador!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="cardsindex3" tabindex="-1" aria-labelledby="cardsindex3" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="cardsindex3">Sorteo por mi cumple!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title" id="sorteoMod">Sorteo por mi cumple!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         El sorteo finalizó, estate atento a los próximos!
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
 </div>
+
+
+
 <!--end MODALDEFAULT-->
 
   <hr class="dividerHeader">
@@ -149,6 +135,7 @@
       <h2 class="featContent-heading">Cómo hago mi pedido? <span class="text-muted">Ayuda!</span></h2>
       <p class="lead">Recordá que todos los pedidos se toman por whatsapp.</p>
       <p>Si necesitás más info, podés entrar a nuestro <a href="./views/pedidos.html">formulario</a> y ver los pasos a seguir!</p>
+      <button type="button" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#sorteoMod">HOLA</button>
     </div>
     <div class="col-md-5">
       <img src="media/featcontentpedidos.jpg" title="Imagen Pedidos" alt="Pedidos"
@@ -196,20 +183,14 @@
   <svg viewBox="0 0 399 400" class="partSvg whatsAppAlt">
     <path d="M290.242 239.702c-4.952-2.478-29.302-14.458-33.842-16.113-4.539-1.653-7.84-2.478-11.142 2.479-3.302 4.957-12.794 16.114-15.683 19.42-2.888 3.304-5.777 3.72-10.73 1.239-4.952-2.479-20.91-7.708-39.827-24.582-14.723-13.133-24.663-29.35-27.551-34.309-2.89-4.958-.31-7.638 2.17-10.108 2.229-2.22 4.954-5.785 7.43-8.677 2.476-2.89 3.301-4.958 4.952-8.262 1.65-3.306.826-6.197-.413-8.676-1.238-2.478-11.143-26.857-15.27-36.775-4.02-9.656-8.103-8.348-11.143-8.5-2.885-.144-6.19-.175-9.492-.175-3.301 0-8.667 1.24-13.207 6.197-4.54 4.958-17.334 16.94-17.334 41.317 0 24.378 17.746 47.927 20.223 51.233 2.477 3.306 34.922 53.33 84.606 74.782 11.815 5.104 21.04 8.15 28.233 10.433 11.864 3.77 22.66 3.238 31.194 1.962 9.516-1.42 29.302-11.98 33.43-23.548 4.126-11.57 4.126-21.486 2.888-23.552-1.238-2.066-4.54-3.305-9.492-5.785m-90.366 123.386h-.066c-29.563-.011-58.557-7.954-83.851-22.964l-6.016-3.57L47.59 352.91l16.642-60.793-3.917-6.234c-16.49-26.229-25.201-56.545-25.188-87.674.036-90.833 73.941-164.732 164.814-164.732 44.003.015 85.367 17.173 116.472 48.314 31.104 31.14 48.224 72.531 48.207 116.55-.037 90.841-73.942 164.747-164.745 164.747m140.21-304.959C302.666 20.663 252.899.022 199.875 0 90.623 0 1.705 88.913 1.662 198.197c-.015 34.935 9.112 69.033 26.458 99.093L0 399.999l105.075-27.562c28.95 15.791 61.547 24.115 94.72 24.125h.082c109.24 0 198.165-88.92 198.21-198.207.02-52.962-20.578-102.761-58-140.226"></path>
   </svg>
-</a>
-<!--whatsapp icon-->
+</a><!--whatsapp icon-->
 
 </main>
 
-
-<!-- Bootstrap core JavaScript
-================================================== -->
+<!-- Bootstrap core JavaScript-->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
       
 </body>
 </html>

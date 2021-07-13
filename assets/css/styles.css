@@ -3,24 +3,98 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   font-family: 'Open Sans', sans-serif;
-  background-image: url(../../media/textures/wall-bg.svg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: #ffffffce;
-  color: #1a1108; }
-  body a {
-    color: #1a1108;
-    font-weight: bolder;
+  background-color: #FFFFFF;
+  color: #1a1108;
+}
+body a {
+  color: #1a1108;
+  font-weight: bolder;
+} 
+body a:hover {
+  color:#1a1108bd;
+}
+body .dividerHeader {
+  /*separador presente en todas las páginas*/
+  margin: 5rem 7rem 5rem 7rem;
+  border-width: 0.2rem;
+  border-color:#1A1108;
+}
+
+/*Navbar & header*/
+header nav {
+  background-color: #ffffff;
+  border-bottom: solid 0.2rem #000000;
+} 
+header button:hover {
+  background-color:#ebebeb;
+}
+.navbar {
+  color: black;
+}
+.nav-item {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: larger;
+}
+.nav-link {
+  font-weight: normal;
+}
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 32rem;/*changed to min height since images are 16:9*/
+}
+
+/*clases del index*/
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.featContent-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/*resp css featcontent en index*/
+@media (min-width: 40em) {
+  .featContent-heading {
+    font-size: 50px;
   } 
-  body a:hover {
-      color:#1a1108bd;}
-  body .dividerHeader {
-    /*separador presente en todas las páginas*/
-    margin: 5rem 7rem 5rem 7rem;
-    border-width: 0.2rem;
-    border-color:#1A1108;}
+}
+
+@media (min-width: 62em) {
+  .featContent {
+    margin: auto 8rem auto 8rem; }
+  .featContent-heading {
+    margin-top: 2rem;
+  }
+}
 
 /*botones Ver Recetas/Cerrar Modal/Ver preparación*/
 .btn-secondary {
@@ -28,34 +102,22 @@ body {
   color:#ffffff;
   font-weight: bolder;
   border-style: none;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+}
 
 .btn-secondary:active {
-  background-color:#57392ece !important; }
+  background-color:#57392ece !important;
+}
 
 .btn-secondary:hover {
-  background-color:#57392ece; }
+  background-color:#57392ece;
+}
 
 .btn-secondary:focus {
-  background-color:#1A1108; }
+  background-color:#1A1108;
+}
 
 
-header {
-  margin-bottom: 9rem;}
-  header nav {
-    background-color: #ffffff;
-    border-bottom: solid 0.2rem #000000;} 
-    header button:hover {
-    background-color:#ebebeb; }
-.navbar {
-  color: black;
-}
-.nav-item {
-font-family: 'Ubuntu', sans-serif;
-  font-size: larger;}
-.nav-link {
-  font-weight: normal;
-}
 
 /*card decks*/
 .card-deck .card {
@@ -70,34 +132,7 @@ font-family: 'Ubuntu', sans-serif;
       text-decoration: none;
       color: inherit; }
 
-/*clases del index*/
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem; } }
-
-.featContent-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem; }
-
-/*resp css featcontent en index*/
-@media (min-width: 40em) {
-  .featContent-heading {
-    font-size: 50px; } }
-
-@media (min-width: 62em) {
-  .featContent {
-    margin: auto 8rem auto 8rem; }
-  .featContent-heading {
-    margin-top: 2rem; } }
 
 /*recetas.html*/
 .tabdeRecetas {
