@@ -1,587 +1,719 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Olga Pastelería. Las mejores tortas en tu mesa - Pastelería clásica y vegana a pedido - Recetas dulces y saladas">
-<meta name="keywords"  content="pasteleria, pastel, pasteles, tortas, postres, postre, tortas personalizadas, tortas personalizadas zona sur, tortas personalizadas a domicilio, tortas personalizadas en avellaneda, tortas a pedido">
-<title>Olga Pastelería - Recetas dulces y saladas</title>
-<link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous">
-<!--Google fonts-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!--Fin google fonts-->
-
-<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Olga Pastelería. Las mejores tortas en tu mesa - Pastelería clásica y vegana a pedido - Recetas dulces y saladas">
+  <meta name="keywords"
+    content="pasteleria, pastel, pasteles, tortas, postres, postre, tortas personalizadas, tortas personalizadas zona sur, tortas personalizadas a domicilio, tortas personalizadas en avellaneda, tortas a pedido, pedido tortas zona sur, pedidos CABA">
+  <title>Olga - Recetas</title>
+  <link rel="shortcut icon" href="../media/oldlogoolga.png" type="image/x-icon">
+  <!--bs-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--BS Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <!--Fin google fonts-->
+  <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+  <!--stylesheet-->
 </head>
 
-
 <body>
-
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <a class="navbar-brand" href="../index.html">
-        <img src="../media/logohomeicon.png" width="85" height="85" title="Logo Home Icon" alt="Logo Olga Pasteleria">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light p-4 fixed-top">
+      <!-- Fixed navbar -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Olga
+          <!--<img src="media/logotransparente.svg" width="70" height="70" title="Logo Home Icon" alt="Logo Olga Pasteleria">-->
         </a>
-
-<!--Burger button-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-<!--Fin burger button-->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Recetas<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="catalogo.html">Catálogo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pedidos.html">Pedidos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quienesolga.html">Quién es Olga</a>
-                </li>
-            </ul>
-            <form class="form-inline mt-2 mt-md-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Búsqueda" aria-label="Search">
-              <button class="searchButton rounded-circle btn my-2 my-sm-0" type="submit">
-                <img src="../media/icons/searchicon.png" width="34" height="34" title="Search Icon" alt="Search">
-              </button>
-            </form>
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalogo.html">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pedidos.html">Pedidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienesolga.html">Quién es Olga</a>
+            </li>
+          </ul>
+          <span class="navbar-text" style="font-size: 0.75rem;">
+            <i class="bi bi-whatsapp me-1"></i>+5411-5343-8311
+          </span>
         </div>
+      </div>
     </nav>
-</header>
+  </header>
 
-<main role="main">
+  <main role="main" class="mainMine">
 
-<div class="container">
-
-
-<!--grid recetas-->
-<div class="container-fluid">
-  <!--recetas menu buttons-->
-    <div class="list-group list-group-horizontal tabdeRecetas" id="list-tab" role="tablist">
-      <a class="list-group-item list-group-item-action" id="list-dulce-list" data-toggle="list" href="#list-dulce" role="tab" aria-controls="dulce">DULCE</a>
-      <a class="list-group-item list-group-item-action" id="list-salado-list" data-toggle="list" href="#list-salado" role="tab" aria-controls="salado">SALADO</a>
-    </div>
-
-
-    <!--recetas en cards-->
-    <div class="tab-content p-5" id="nav-tabContent">
-      <div class="tab-pane fade" id="list-dulce" role="tabpanel" aria-labelledby="list-dulce-list">
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="../media/dulce1.jpg" title="Lunettes" alt="lunetes">
-            <div class="card-body">
-              <h4 class="card-title">Lunettes</h4>
-              <p class="card-text">Masitas super ricas con un corazón de mermelada de frutos rojos 🤤</p>
-            </div>
-            <div class="card-footer">
-              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#recetalunettes">
-                Ver receta</button>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="../media/dulce2.jpg" title="Torta de Manzana" alt="torta de manzana">
-            <div class="card-body">
-              <h4 class="card-title">Torta de Manzana</h4>
-              <p class="card-text">Podés usar peras o duraznos, va bien con todo!</p>
-            </div>
-            <div class="card-footer">
-              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#recetatortademanzana">
-                Ver receta</button>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="../media/dulce3.jpg" title="Alfajores de Maicena" alt="alfajores de maicena">
-            <div class="card-body">
-              <h4 class="card-title">Alfajores de Maicena</h4>
-              <p class="card-text">Ideales para la tarde y super faciles de hacer</p>
-            </div>
-            <div class="card-footer">
-              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#recetaalfajoresdemaicena">
-                Ver receta</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="list-salado" role="tabpanel" aria-labelledby="list-salado-list">
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="../media/salado1.jpg" title="Scones de queso" alt="scones de queso">
-            <div class="card-body">
-              <h4 class="card-title">Scones de queso</h4>
-              <p class="card-text">No sabes lo ricos que soooooon y lo fáciles de hacer</p>
-            </div>
-            <div class="card-footer">
-              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#recetasconesdequeso">
-                Ver receta</button>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="../media/salado2.jpg" title="Panes Saborizados" alt="pan saborizado">
-            <div class="card-body">
-              <h4 class="card-title">Panes Saborizados</h4>
-              <p class="card-text">Se van a acordar de mí de lo rica que es 😉</p>
-            </div>
-            <div class="card-footer">
-              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#recetapansaborizado">
-                Ver receta</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!--end recetas en cards-->
-
-</div><!--end grid recetas-->
-
-
-<!--start MODALRECETAS-->
-<!--Modal recetas dulces-->
-<div class="modal fade" id="recetalunettes" tabindex="-1" aria-labelledby="recetalunettes" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="lunetteslabel">Lunettes</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="card mb-3">
-            <div class="row no-gutters">
-              <div class="col-lg-8 col-md-7 card-body">
-                <h6 class="card-title ml-2">Ingredientes:</h6>
-                <p class="card-text">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Azucar impalpable 100 gr</li>
-                    <li class="list-group-item">Manteca 150 gr</li>
-                    <li class="list-group-item">Harina 250 gr</li>
-                    <li class="list-group-item">Yemas 3 unidades</li>
-                    <li class="list-group-item">Esencia de vainilla c/n</li>
-                    <li class="list-group-item">Azucar impalpable c/n (para decorar)</li>
-                  </ul></p>
-              </div>
-              <div class="col-lg-4 col-md-5 d-none d-md-block">
-                <img src="../media/dulce1.1.jpg" title="Lunettes" alt="lunettes1" 
-                    class="img-fluid mx-auto mb-1"
-                    role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <img src="../media/dulce1.2.jpg" title="Lunettes" alt="lunettes2" 
-                    class="img-fluid mx-auto"
-                    role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-            </div>
-            <div class="row no-gutters d-sm-blok d-md-none">
-              <div class="col-6">
-              <img src="../media/dulce1.1.jpg" title="Lunettes" alt="lunettes1"  
-                  class="img-fluid img-thumbnail mx-auto"
-                  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-              <div class="col-6">
-                <img src="../media/dulce1.2.jpg" title="Lunettes" alt="lunettes2" 
-                  class="img-fluid img-thumbnail mx-auto"
-                  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-            </div>
-          </div>
-            <div class="row">
-              <div class="col-md-12 d-flex justify-content-center">
-                <button class="btn btn-secondary col-md-6" type="button" data-toggle="collapse" data-target="#collapserecipe1" aria-expanded="false" aria-controls="collapserecipe1">
-                Ver preparación >>
-                </button>
-              </div>
-              <div class="collapse" id="collapserecipe1">
-                <div class="card-body">
-                  <p>Para hacer la masa, ponés en una procesadora la manteca fría con el azúcar y la harina, 
-                    procesás hasta hacer un harinado y le sumas las yemas y la esencia de vainilla, 
-                    volvés a procesar hasta unir todo y listo, ya tenés la masa hecha 😁. 
-                    Dejás reposar la masa en la heladera por al menos 2 hs y después la estirás de 3-4 
-                    mm de espesor, cortás las tapitas y a la mitad les haces un agujerito en el centro. 
-                    Volvés a llevar la masa a la heladera por otras 2 hs y pasado ese tiempo la cocinás 
-                    en el horno a 200°C por aprox. 20 minutos, sacás del horno, dejás enfriar y rellenás 
-                    las tapas que no tienen agujero con la mermelada colocándola en el medio. 
-                    A las tapitas con el hueco en el centro las espolvoreás con azúcar impalpable y después 
-                    unís con las bases que tienen el relleno.</p>
-                  <p>Son una delicia y no te vas a arrepentir de hacerlas (mas allá de que lleve
-                    mucho reposo)⏰</p> 
-                  <p>Yo usé una mermelada casera pero obviamente podés comprarla o rellenarla, 
-                    y si te gusta más, con dulce de leche 🐮</p>
-                  <p>Podes usar azúcar común para hacer la masa pero te va a cambiar completamente la textura en boca😉</p>
-                  <p>Esta misma masa sirve, por ejemplo, para hacer bases de tartas dulces, como un lemon pie 🍋</p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="recetatortademanzana" tabindex="-1" aria-labelledby="recetatortademanzana" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="tortademanzanalabel">Torta de Manzana</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="card mb-3">
-            <div class="row no-gutters">
-              <div class="col-lg-8 col-md-7 card-body">
-                <h6 class="card-title ml-2">Ingredientes:</h6>
-                <p class="card-text">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Harina 0000 250 gr</li>
-                    <li class="list-group-item">Azucar 250 gr</li>
-                    <li class="list-group-item">Huevos 5</li>
-                    <li class="list-group-item">Aceite 100 gr</li>
-                    <li class="list-group-item">Miel 100 gr</li>
-                    <li class="list-group-item">Polvo de hornear 20 gr</li>
-                    <li class="list-group-item">Manzanas 4 o 5</li>
-                    <li class="list-group-item">Canela c/n</li>
-                    <li class="list-group-item">Azucar para el caramelo c/n</li>
-                  </ul></p>
-              </div>
-              <div class="col-lg-4 col-md-5 d-none d-md-block">
-                <img src="../media/dulce2.1.jpg" title="Torta de Manzana" alt="tortademanzana1" 
-                    class="img-fluid mx-auto mb-1"
-                    role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <img src="../media/dulce2.2.jpg" title="Torta de Manzana" alt="tortademanzana2" 
-                    class="img-fluid mx-auto"
-                    role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-            </div>
-            <div class="row no-gutters d-sm-blok d-md-none">
-              <div class="col-6">
-              <img src="../media/dulce2.1.jpg" title="Torta de Manzana" alt="tortademanzana1"  
-                  class="img-fluid img-thumbnail mx-auto"
-                  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-              <div class="col-6">
-                <img src="../media/dulce2.2.jpg" title="Torta de Manzana" alt="tortademanzana2" 
-                  class="img-fluid img-thumbnail mx-auto"
-                  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-            </div>
-          </div>
-            <div class="row">
-              <div class="col-md-12 d-flex justify-content-center">
-                <button class="btn btn-secondary col-md-6" type="button" data-toggle="collapse" data-target="#collapserecipe2" aria-expanded="false" aria-controls="collapserecipe2">
-                Ver preparación >>
-                </button>
-              </div>
-              <div class="collapse" id="collapserecipe2">
-                <div class="card-body">
-                  <p>Primero pones a hacer un caramelo con azucar y apenas lo cubris con agua, lo llevas 
-                    al fuego, y cuando el agua se evapore vas a dejar cocinar hasta que se ponga de un color 
-                    ambar.</p>
-                  <p>Cubris un molde con el caramelo y en la misma sarten donde lo hiciste vas a poner 
-                    a dorar las manzanas cortadas en octavos con un poco de manteca. Una vez doradas las pones 
-                    en el molde previamente acaramelado. Para la masa batis los huevos con el azucar hasta que 
-                    tripliquen su volumen, le agregas el aceite y la miel en forma de hilo y por ultimo 
-                    los secos de a poco (si usas harina leudante no uses polvo de hornear).</p>
-                  <p>Una vez tengas la masa la volcas en el molde con el caramelo y las manzanas y 
-                    lo llevas al horno a 170°C por 45-60 minutos y lo desmoldas CALIENTE, sino el caramelo se enfria 
-                    y no lo despegas mas. Para la merienda es ideal 😉</p>
-                  <p>Si no te gusta la canela le podes poner vainilla o ralladura de limon que tambien 
-                    le queda genial 🤤 y tambien le podes agregar unos cubitos de manzana en el interior</p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="recetaalfajoresdemaicena" tabindex="-1" aria-labelledby="recetaalfajoresdemaicena" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="aljaforesdemaicenalabel">Alfajorcitos de Maicena</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="card mb-3">
-            <div class="row no-gutters">
-              <div class="col-lg-8 col-md-7 card-body">
-                <h6 class="card-title ml-2">Ingredientes:</h6>
-                <p class="card-text">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Manteca 150 gr</li>
-                    <li class="list-group-item">Azucar impalpable 150 gr</li>
-                    <li class="list-group-item">Yemas 8 unidades</li>
-                    <li class="list-group-item">Aceite 100 gr</li>
-                    <li class="list-group-item">Maicena 350 gr</li>
-                    <li class="list-group-item">Harina 0000 150 gr</li>
-                    <li class="list-group-item">Polvo de hornear 1 cucharada</li>
-                    <li class="list-group-item">Vainillin c/n</li>
-                    <li class="list-group-item">Dulce de leche repostero c/n</li>
-                  </ul></p>
-              </div>
-              <div class="col-lg-4 col-md-5 d-none d-md-block">
-                <img src="../media/dulce3.1.jpg" title="Alfajores de Maicena" alt="alfajormaicena1" 
-                    class="img-fluid mx-auto mb-1"
-                    role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <img src="../media/dulce3.2.jpg" title="Alfajores de Maicena" alt="alfajormaicena2" 
-                    class="img-fluid mx-auto"
-                    role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-            </div>
-            <div class="row no-gutters d-sm-blok d-md-none">
-              <div class="col-6">
-              <img src="../media/dulce3.1.jpg" title="Alfajores de Maicena" alt="alfajormaicena1" 
-                  class="img-fluid img-thumbnail mx-auto"
-                  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-              <div class="col-6">
-                <img src="../media/dulce3.2.jpg" title="Alfajores de Maicena" alt="alfajormaicena2"  
-                  class="img-fluid img-thumbnail mx-auto"
-                  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-            </div>
-          </div>
-            <div class="row">
-              <div class="col-md-12 d-flex justify-content-center">
-                <button class="btn btn-secondary col-md-6" type="button" data-toggle="collapse" data-target="#collapserecipe3" aria-expanded="false" aria-controls="collapserecipe3">
-                Ver preparación >>
-                </button>
-              </div>
-              <div class="collapse" id="collapserecipe3">
-                <div class="card-body">
-                  <p>Batís la manteca a temperatura ambiente con el azucar hasta que se forme una crema blanca, 
-                    le agregas las yemas de a una mientras batis y el vainillin. Le incorporas la maicena, la 
-                    harina y el polvo de hornear tamizados, integras y dejas reposar 1 hora en la heladera.</p>
-                  <p>Estiras la masa de 0,5 a 1 cm de espesor y horneas a 180°C de 10 a 15 minutos.</p>
-                  <p>Dejas enfriar las tapitas, rellenas con el dulce de leche y si tenes coco le pones 
-                    en los bordes y listo, así de facil tenes una merienda super rica 😁</p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!--modal de recetas saladas-->
-<div class="modal fade" id="recetasconesdequeso" tabindex="-1" aria-labelledby="recetasconesdequeso" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="sconeslabel">Scones de Queso</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="card mb-3">
-            <div class="row no-gutters">
-              <div class="col-lg-8 col-md-7 card-body">
-                <h6 class="card-title ml-2">Ingredientes:</h6>
-                <p class="card-text">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Harina 4 ceros 500 gr</li>
-                    <li class="list-group-item">Azúcar 50 gr</li>
-                    <li class="list-group-item">Polvo de hornear 30 gr</li>
-                    <li class="list-group-item">Sal una cucharada colmada</li>
-                    <li class="list-group-item">Manteca 100 gr</li>
-                    <li class="list-group-item">Queso crema 400 gr</li>
-                    <li class="list-group-item">Huevos 2</li>
-                    <li class="list-group-item">Queso semiduro rayado 200 gr</li>
-                  </ul></p>
-              </div>
-              <div class="col-lg-4 col-md-5 d-none d-md-block">
-                <img src="../media/salado1.1.jpg" title="Scones de queso" alt="sconesdequeso1" 
-                    class="img-fluid mx-auto mb-1"
-                    role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <img src="../media/salado1.2.jpg" title="Scones de queso" alt="sconesdequeso2" 
-                    class="img-fluid mx-auto"
-                    role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-            </div>
-            <div class="row no-gutters d-sm-blok d-md-none">
-              <div class="col-6">
-              <img src="../media/salado1.1.jpg" title="Scones de queso" alt="sconesdequeso1"  
-                  class="img-fluid img-thumbnail mx-auto"
-                  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-              <div class="col-6">
-                <img src="../media/salado1.2.jpg" title="Scones de queso" alt="sconesdequeso2" 
-                  class="img-fluid img-thumbnail mx-auto"
-                  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-            </div>
-          </div>
-            <div class="row">
-              <div class="col-md-12 d-flex justify-content-center">
-                <button class="btn btn-secondary col-md-6" type="button" data-toggle="collapse" data-target="#collapserecipe4" aria-expanded="false" aria-controls="collapserecipe4">
-                Ver preparación >>
-                </button>
-              </div>
-              <div class="collapse" id="collapserecipe4">
-                <div class="card-body">
-                  <p>En una procesadora pones la harina, el azúcar, el polvo de hornear, la sal y 
-                    la manteca fría. Procesas todo hasta que se haga un arenado. Mezclas el queso 
-                    crema con los huevos y junto con el queso rayado lo volcas sobre el arenado. 
-                    Volves a procesar hasta que se una todo y estiras la masa de 2 a 3 cm de espesor. 
-                    Cortas los scones del tamaño que quieras, los pones en una placa, los pintas con 
-                    huevo y le agregas más queso rayado arriba. Cocinalos a 180° C por 20 minutos.</p>
-                  <p>Los dejas enfriar un poco y comerlos solos o te haces un chambuchito y sos más 
-                    feliz todavía 😙</p>
-                  <p>Si la procesadora no es muy grande hace la receta en 2 veces</p>
-                  <p>Podes reemplazar el queso crema por crema de leche o yogurt natural 
-                    o leche (en ese orden de prioridad). Obvio que cambia el producto final.</p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="recetapansaborizado" tabindex="-1" aria-labelledby="recetapansaborizado" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="pansaborizadolabel">Panes Saborizados</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="card mb-3">
-            <div class="row no-gutters">
-              <div class="col-lg-8 col-md-7 card-body">
-                <h6 class="card-title ml-2">Ingredientes:</h6>
-                <p class="card-text">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Harina 3 ceros 500 gr</li>
-                    <li class="list-group-item">Levadura 20 gr</li>
-                    <li class="list-group-item">Agua 300 cc</li>
-                    <li class="list-group-item">Sal c/n</li>
-                    <li class="list-group-item">Manteca 50 gr</li>
-                    <li class="list-group-item">200 gr de queso de pasta dura</li>
-                  </ul></p>
-              </div>
-              <div class="col-lg-4 col-md-5 d-none d-md-block">
-                <img src="../media/salado2.1.jpg" title="Panes Saborizados" alt="panessaborizados1" 
-                    class="img-fluid mx-auto mb-1"
-                    role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <img src="../media/salado2.2.jpg" title="Panes Saborizados" alt="panessaborizados2"  
-                    class="img-fluid mx-auto"
-                    role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-            </div>
-            <div class="row no-gutters d-sm-blok d-md-none">
-              <div class="col-6">
-              <img src="../media/salado2.1.jpg" title="Panes Saborizados" alt="panessaborizados1" 
-                  class="img-fluid img-thumbnail mx-auto"
-                  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-              <div class="col-6">
-                <img src="../media/salado2.2.jpg" title="Panes Saborizados" alt="panessaborizados2"  
-                  class="img-fluid img-thumbnail mx-auto"
-                  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              </div>
-            </div>
-          </div>
-            <div class="row">
-              <div class="col-md-12 d-flex justify-content-center">
-                <button class="btn btn-secondary col-md-6" type="button" data-toggle="collapse" data-target="#collapserecipe5" aria-expanded="false" aria-controls="collapserecipe5">
-                Ver preparación >>
-                </button>
-              </div>
-              <div class="collapse" id="collapserecipe5">
-                <div class="card-body">
-                  <p>En un bowl o sobre la mesada pones la harina, en el centro la levadura 
-                    y el agua y a los costados la sal. Amasas un toque y le sumas la manteca y 
-                    después el queso. Terminas de amasar hasta que este bien integrado todo y 
-                    dejas descansar la masa 20 minutos tapada con un trapo húmedo.</p>
-                  <p>Cortas piezas del tamaño de una ciruela (ponele) y formas bollitos. Una vez que 
-                    los tengas ponelos sobre un placa aceitada o enmantecada y dejalos hasta que 
-                    dupliquen volumen. Pintas con huevo diluido con leche y le pones quesito arriba 
-                    para más placer 🤤. Los llevas a un horno fuerte por 15 o 20 minutos, los sacas 
-                    y no te tires de cabeza a comerte la fuente entera porque te vas a quemar 🥵</p>
-                  <p>Podes saborizar con cebolla, salamin, romero, aceitunas o lo que se te ocurra 
-                    porque es un pancito súper versátil bebeeeee 😘</p>
-                  <p>Amigxs veganxs reemplacen la manteca por aceite o margarina apta 🌱</p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!--end MODALRECETAS-->
-
-
-</div><!--end container-->
-<hr class="dividerHeader">
-
-
-<!--footer-->
-<footer class="container">
-  <p>
-    <a href="#">
-      <img src="../media/icons/chevron-upwards-arrow.png" width="35" height="35" title="Back to top" alt="Back to top icon">
-    </a>
-    &middot; &copy; 2021 &middot;
-    <a href="https://www.instagram.com/olga.pasteleria/" target="_blank">
-      <img src="../media/icons/igicon.png" width="35" height="35" title="Instagram" alt="Instagram icon">
-    </a>
-  </p>
-</footer>
-<!--end footer-->
-
-<!--whatsapp icon-->
-<a href="https://api.whatsapp.com/send?phone=5491153438311&text=Hola!%20Me%20interesa%20saber%20m%C3%A1s%20sobre%20tus%20productos." id="whatsappFloatingButton"> 
-  <svg viewBox="0 0 399 400" class="partSvg whatsAppAlt">
-    <path d="M290.242 239.702c-4.952-2.478-29.302-14.458-33.842-16.113-4.539-1.653-7.84-2.478-11.142 2.479-3.302 4.957-12.794 16.114-15.683 19.42-2.888 3.304-5.777 3.72-10.73 1.239-4.952-2.479-20.91-7.708-39.827-24.582-14.723-13.133-24.663-29.35-27.551-34.309-2.89-4.958-.31-7.638 2.17-10.108 2.229-2.22 4.954-5.785 7.43-8.677 2.476-2.89 3.301-4.958 4.952-8.262 1.65-3.306.826-6.197-.413-8.676-1.238-2.478-11.143-26.857-15.27-36.775-4.02-9.656-8.103-8.348-11.143-8.5-2.885-.144-6.19-.175-9.492-.175-3.301 0-8.667 1.24-13.207 6.197-4.54 4.958-17.334 16.94-17.334 41.317 0 24.378 17.746 47.927 20.223 51.233 2.477 3.306 34.922 53.33 84.606 74.782 11.815 5.104 21.04 8.15 28.233 10.433 11.864 3.77 22.66 3.238 31.194 1.962 9.516-1.42 29.302-11.98 33.43-23.548 4.126-11.57 4.126-21.486 2.888-23.552-1.238-2.066-4.54-3.305-9.492-5.785m-90.366 123.386h-.066c-29.563-.011-58.557-7.954-83.851-22.964l-6.016-3.57L47.59 352.91l16.642-60.793-3.917-6.234c-16.49-26.229-25.201-56.545-25.188-87.674.036-90.833 73.941-164.732 164.814-164.732 44.003.015 85.367 17.173 116.472 48.314 31.104 31.14 48.224 72.531 48.207 116.55-.037 90.841-73.942 164.747-164.745 164.747m140.21-304.959C302.666 20.663 252.899.022 199.875 0 90.623 0 1.705 88.913 1.662 198.197c-.015 34.935 9.112 69.033 26.458 99.093L0 399.999l105.075-27.562c28.95 15.791 61.547 24.115 94.72 24.125h.082c109.24 0 198.165-88.92 198.21-198.207.02-52.962-20.578-102.761-58-140.226"></path>
-  </svg>
-</a>
-<!--whatsapp icon-->
-
-</main>
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-
-
+    <div class="container">
       
+      <!--Recetas-->
+      <!--recetas tabs-->
+      <div class="list-group list-group-horizontal tabdeRecetas" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action" id="list-dulce-list" data-bs-toggle="list" href="#list-dulce"
+          role="tab" aria-controls="list-dulce">DULCE</a>
+        <a class="list-group-item list-group-item-action" id="list-salado-list" data-bs-toggle="list"
+          href="#list-salado" role="tab" aria-controls="list-salado">SALADO</a>
+      </div>
+      <!--end recetas tabs-->
+      <!--cards recetas-->
+      <div class="tab-content p-5" id="nav-tabContent">
+        <div class="tab-pane fade" id="list-dulce" role="tabpanel" aria-labelledby="list-dulce-list">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img class="card-img-top" src="../media/dulce1.jpg" title="Lunettes" alt="lunetes">
+                <div class="card-body">
+                  <h4 class="card-title">Lunettes</h4>
+                  <p class="card-text">Masitas super ricas con un corazón de mermelada de frutos rojos 🤤</p>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary fw-bolder" data-bs-toggle="modal"
+                    data-bs-target="#recetalunettes">
+                    Ver receta</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="card-img-top" src="../media/dulce2.jpg" title="Torta de Manzana" alt="torta de manzana">
+                <div class="card-body">
+                  <h4 class="card-title">Torta de Manzana</h4>
+                  <p class="card-text">Podés usar peras o duraznos, va bien con todo!</p>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary fw-bolder" data-bs-toggle="modal"
+                    data-bs-target="#recetatortademanzana">
+                    Ver receta</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="card-img-top" src="../media/dulce3.jpg" title="Alfajores de Maicena"
+                  alt="alfajores de maicena">
+                <div class="card-body">
+                  <h4 class="card-title">Alfajores de Maicena</h4>
+                  <p class="card-text">Ideales para la tarde y super faciles de hacer</p>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary fw-bolder" data-bs-toggle="modal"
+                    data-bs-target="#recetaalfajoresdemaicena">
+                    Ver receta</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="list-salado" role="tabpanel" aria-labelledby="list-salado-list">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img class="card-img-top" src="../media/salado1.jpg" title="Scones de queso" alt="scones de queso">
+                <div class="card-body">
+                  <h4 class="card-title">Scones de queso</h4>
+                  <p class="card-text">No sabes lo ricos que soooooon y lo fáciles de hacer</p>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary fw-bolder" data-bs-toggle="modal"
+                    data-bs-target="#recetasconesdequeso">
+                    Ver receta</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="card-img-top" src="../media/salado2.jpg" title="Panes Saborizados" alt="pan saborizado">
+                <div class="card-body">
+                  <h4 class="card-title">Panes Saborizados</h4>
+                  <p class="card-text">Se van a acordar de mí de lo rica que es 😉</p>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary fw-bolder" data-bs-toggle="modal"
+                    data-bs-target="#recetapansaborizado">
+                    Ver receta</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end cards recetas-->
+
+      <!--end recetas-->
+
+
+      <!--start MODALRECETAS-->
+      <!--Modal recetas dulces-->
+      <div class="modal fade" id="recetalunettes" tabindex="-1" aria-labelledby="recetalunettes" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="lunetteslabel">Lunettes</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="card mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-lg-8 col-md-7 card-body">
+                      <h6 class="card-title ml-2">Ingredientes:</h6>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Azucar impalpable 100 gr</li>
+                          <li class="list-group-item">Manteca 150 gr</li>
+                          <li class="list-group-item">Harina 250 gr</li>
+                          <li class="list-group-item">Yemas 3 unidades</li>
+                          <li class="list-group-item">Esencia de vainilla c/n</li>
+                          <li class="list-group-item">Azucar impalpable c/n (para decorar)</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 d-none d-md-block">
+                      <img src="../media/dulce1.1.jpg" title="Lunettes" alt="lunettes1" class="img-fluid mx-auto mb-1">
+                      <img src="../media/dulce1.2.jpg" title="Lunettes" alt="lunettes2" class="img-fluid mx-auto">
+                    </div>
+                  </div>
+                  <div class="row no-gutters d-md-none">
+                    <div class="col-6">
+                      <img src="../media/dulce1.1.jpg" title="Lunettes" alt="lunettes1"
+                        class="img-fluid img-thumbnail mx-auto">
+                    </div>
+                    <div class="col-6">
+                      <img src="../media/dulce1.2.jpg" title="Lunettes" alt="lunettes2"
+                        class="img-fluid img-thumbnail mx-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 d-flex justify-content-center">
+                    <button class="btn btnMine col-md-6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapserecipe1" aria-expanded="false" aria-controls="collapserecipe1">
+                      Ver preparación >>
+                    </button>
+                  </div>
+                  <div class="collapse" id="collapserecipe1">
+                    <div class="card-body">
+                      <p>Para hacer la masa, ponés en una procesadora la manteca fría con el azúcar y la harina,
+                        procesás hasta hacer un harinado y le sumas las yemas y la esencia de vainilla,
+                        volvés a procesar hasta unir todo y listo, ya tenés la masa hecha 😁.
+                        Dejás reposar la masa en la heladera por al menos 2 hs y después la estirás de 3-4
+                        mm de espesor, cortás las tapitas y a la mitad les haces un agujerito en el centro.
+                        Volvés a llevar la masa a la heladera por otras 2 hs y pasado ese tiempo la cocinás
+                        en el horno a 200°C por aprox. 20 minutos, sacás del horno, dejás enfriar y rellenás
+                        las tapas que no tienen agujero con la mermelada colocándola en el medio.
+                        A las tapitas con el hueco en el centro las espolvoreás con azúcar impalpable y después
+                        unís con las bases que tienen el relleno.</p>
+                      <p>Son una delicia y no te vas a arrepentir de hacerlas (mas allá de que lleve
+                        mucho reposo)⏰</p>
+                      <p>Yo usé una mermelada casera pero obviamente podés comprarla o rellenarla,
+                        y si te gusta más, con dulce de leche 🐮</p>
+                      <p>Podes usar azúcar común para hacer la masa pero te va a cambiar completamente la textura en
+                        boca😉</p>
+                      <p>Esta misma masa sirve, por ejemplo, para hacer bases de tartas dulces, como un lemon pie 🍋</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btnMine" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="recetatortademanzana" tabindex="-1" aria-labelledby="recetatortademanzana"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tortademanzanalabel">Torta de Manzana</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="card mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-lg-8 col-md-7 card-body">
+                      <h6 class="card-title ml-2">Ingredientes:</h6>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Harina 0000 250 gr</li>
+                          <li class="list-group-item">Azucar 250 gr</li>
+                          <li class="list-group-item">Huevos 5</li>
+                          <li class="list-group-item">Aceite 100 gr</li>
+                          <li class="list-group-item">Miel 100 gr</li>
+                          <li class="list-group-item">Polvo de hornear 20 gr</li>
+                          <li class="list-group-item">Manzanas 4 o 5</li>
+                          <li class="list-group-item">Canela c/n</li>
+                          <li class="list-group-item">Azucar para el caramelo c/n</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 d-none d-md-block">
+                      <img src="../media/dulce2.1.jpg" title="Torta de Manzana" alt="tortademanzana1"
+                        class="img-fluid mx-auto mb-1">
+                      <img src="../media/dulce2.2.jpg" title="Torta de Manzana" alt="tortademanzana2"
+                        class="img-fluid mx-auto">
+                    </div>
+                  </div>
+                  <div class="row no-gutters d-md-none">
+                    <div class="col-6">
+                      <img src="../media/dulce2.1.jpg" title="Torta de Manzana" alt="tortademanzana1"
+                        class="img-fluid img-thumbnail mx-auto">
+                    </div>
+                    <div class="col-6">
+                      <img src="../media/dulce2.2.jpg" title="Torta de Manzana" alt="tortademanzana2"
+                        class="img-fluid img-thumbnail mx-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 d-flex justify-content-center">
+                    <button class="btn btnMine col-md-6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapserecipe2" aria-expanded="false" aria-controls="collapserecipe2">
+                      Ver preparación >>
+                    </button>
+                  </div>
+                  <div class="collapse" id="collapserecipe2">
+                    <div class="card-body">
+                      <p>Primero pones a hacer un caramelo con azucar y apenas lo cubris con agua, lo llevas
+                        al fuego, y cuando el agua se evapore vas a dejar cocinar hasta que se ponga de un color
+                        ambar.</p>
+                      <p>Cubris un molde con el caramelo y en la misma sarten donde lo hiciste vas a poner
+                        a dorar las manzanas cortadas en octavos con un poco de manteca. Una vez doradas las pones
+                        en el molde previamente acaramelado. Para la masa batis los huevos con el azucar hasta que
+                        tripliquen su volumen, le agregas el aceite y la miel en forma de hilo y por ultimo
+                        los secos de a poco (si usas harina leudante no uses polvo de hornear).</p>
+                      <p>Una vez tengas la masa la volcas en el molde con el caramelo y las manzanas y
+                        lo llevas al horno a 170°C por 45-60 minutos y lo desmoldas CALIENTE, sino el caramelo se enfria
+                        y no lo despegas mas. Para la merienda es ideal 😉</p>
+                      <p>Si no te gusta la canela le podes poner vainilla o ralladura de limon que tambien
+                        le queda genial 🤤 y tambien le podes agregar unos cubitos de manzana en el interior</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btnMine" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="recetaalfajoresdemaicena" tabindex="-1" aria-labelledby="recetaalfajoresdemaicena"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="aljaforesdemaicenalabel">Alfajorcitos de Maicena</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="card mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-lg-8 col-md-7 card-body">
+                      <h6 class="card-title ml-2">Ingredientes:</h6>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Manteca 150 gr</li>
+                          <li class="list-group-item">Azucar impalpable 150 gr</li>
+                          <li class="list-group-item">Yemas 8 unidades</li>
+                          <li class="list-group-item">Aceite 100 gr</li>
+                          <li class="list-group-item">Maicena 350 gr</li>
+                          <li class="list-group-item">Harina 0000 150 gr</li>
+                          <li class="list-group-item">Polvo de hornear 1 cucharada</li>
+                          <li class="list-group-item">Vainillin c/n</li>
+                          <li class="list-group-item">Dulce de leche repostero c/n</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 d-none d-md-block">
+                      <img src="../media/dulce3.1.jpg" title="Alfajores de Maicena" alt="alfajormaicena1"
+                        class="img-fluid mx-auto mb-1">
+                      <img src="../media/dulce3.2.jpg" title="Alfajores de Maicena" alt="alfajormaicena2"
+                        class="img-fluid mx-auto">
+                    </div>
+                  </div>
+                  <div class="row no-gutters d-md-none">
+                    <div class="col-6">
+                      <img src="../media/dulce3.1.jpg" title="Alfajores de Maicena" alt="alfajormaicena1"
+                        class="img-fluid img-thumbnail mx-auto">
+                    </div>
+                    <div class="col-6">
+                      <img src="../media/dulce3.2.jpg" title="Alfajores de Maicena" alt="alfajormaicena2"
+                        class="img-fluid img-thumbnail mx-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 d-flex justify-content-center">
+                    <button class="btn btnMine col-md-6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapserecipe3" aria-expanded="false" aria-controls="collapserecipe3">
+                      Ver preparación >>
+                    </button>
+                  </div>
+                  <div class="collapse" id="collapserecipe3">
+                    <div class="card-body">
+                      <p>Batís la manteca a temperatura ambiente con el azucar hasta que se forme una crema blanca,
+                        le agregas las yemas de a una mientras batis y el vainillin. Le incorporas la maicena, la
+                        harina y el polvo de hornear tamizados, integras y dejas reposar 1 hora en la heladera.</p>
+                      <p>Estiras la masa de 0,5 a 1 cm de espesor y horneas a 180°C de 10 a 15 minutos.</p>
+                      <p>Dejas enfriar las tapitas, rellenas con el dulce de leche y si tenes coco le pones
+                        en los bordes y listo, así de facil tenes una merienda super rica 😁</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btnMine" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--modal de recetas saladas-->
+      <div class="modal fade" id="recetasconesdequeso" tabindex="-1" aria-labelledby="recetasconesdequeso"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="sconeslabel">Scones de Queso</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="card mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-lg-8 col-md-7 card-body">
+                      <h6 class="card-title ml-2">Ingredientes:</h6>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Harina 4 ceros 500 gr</li>
+                          <li class="list-group-item">Azúcar 50 gr</li>
+                          <li class="list-group-item">Polvo de hornear 30 gr</li>
+                          <li class="list-group-item">Sal una cucharada colmada</li>
+                          <li class="list-group-item">Manteca 100 gr</li>
+                          <li class="list-group-item">Queso crema 400 gr</li>
+                          <li class="list-group-item">Huevos 2</li>
+                          <li class="list-group-item">Queso semiduro rayado 200 gr</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 d-none d-md-block">
+                      <img src="../media/salado1.1.jpg" title="Scones de queso" alt="sconesdequeso1"
+                        class="img-fluid mx-auto mb-1">
+                      <img src="../media/salado1.2.jpg" title="Scones de queso" alt="sconesdequeso2"
+                        class="img-fluid mx-auto">
+                    </div>
+                  </div>
+                  <div class="row no-gutters d-md-none">
+                    <div class="col-6">
+                      <img src="../media/salado1.1.jpg" title="Scones de queso" alt="sconesdequeso1"
+                        class="img-fluid img-thumbnail mx-auto">
+                    </div>
+                    <div class="col-6">
+                      <img src="../media/salado1.2.jpg" title="Scones de queso" alt="sconesdequeso2"
+                        class="img-fluid img-thumbnail mx-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 d-flex justify-content-center">
+                    <button class="btn btnMine col-md-6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapserecipe4" aria-expanded="false" aria-controls="collapserecipe4">
+                      Ver preparación >>
+                    </button>
+                  </div>
+                  <div class="collapse" id="collapserecipe4">
+                    <div class="card-body">
+                      <p>En una procesadora pones la harina, el azúcar, el polvo de hornear, la sal y
+                        la manteca fría. Procesas todo hasta que se haga un arenado. Mezclas el queso
+                        crema con los huevos y junto con el queso rayado lo volcas sobre el arenado.
+                        Volves a procesar hasta que se una todo y estiras la masa de 2 a 3 cm de espesor.
+                        Cortas los scones del tamaño que quieras, los pones en una placa, los pintas con
+                        huevo y le agregas más queso rayado arriba. Cocinalos a 180° C por 20 minutos.</p>
+                      <p>Los dejas enfriar un poco y comerlos solos o te haces un chambuchito y sos más
+                        feliz todavía 😙</p>
+                      <p>Si la procesadora no es muy grande hace la receta en 2 veces</p>
+                      <p>Podes reemplazar el queso crema por crema de leche o yogurt natural
+                        o leche (en ese orden de prioridad). Obvio que cambia el producto final.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btnMine" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="recetapansaborizado" tabindex="-1" aria-labelledby="recetapansaborizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="pansaborizadolabel">Panes Saborizados</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="card mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-lg-8 col-md-7 card-body">
+                      <h6 class="card-title ml-2">Ingredientes:</h6>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Harina 3 ceros 500 gr</li>
+                          <li class="list-group-item">Levadura 20 gr</li>
+                          <li class="list-group-item">Agua 300 cc</li>
+                          <li class="list-group-item">Sal c/n</li>
+                          <li class="list-group-item">Manteca 50 gr</li>
+                          <li class="list-group-item">200 gr de queso de pasta dura</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 d-none d-md-block">
+                      <img src="../media/salado2.1.jpg" title="Panes Saborizados" alt="panessaborizados1"
+                        class="img-fluid mx-auto mb-1">
+                      <img src="../media/salado2.2.jpg" title="Panes Saborizados" alt="panessaborizados2"
+                        class="img-fluid mx-auto">
+                    </div>
+                  </div>
+                  <div class="row no-gutters d-md-none">
+                    <div class="col-6">
+                      <img src="../media/salado2.1.jpg" title="Panes Saborizados" alt="panessaborizados1"
+                        class="img-fluid img-thumbnail mx-auto">
+                    </div>
+                    <div class="col-6">
+                      <img src="../media/salado2.2.jpg" title="Panes Saborizados" alt="panessaborizados2"
+                        class="img-fluid img-thumbnail mx-auto">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 d-flex justify-content-center">
+                    <button class="btn btnMine col-md-6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapserecipe5" aria-expanded="false" aria-controls="collapserecipe5">
+                      Ver preparación >>
+                    </button>
+                  </div>
+                  <div class="collapse" id="collapserecipe5">
+                    <div class="card-body">
+                      <p>En un bowl o sobre la mesada pones la harina, en el centro la levadura
+                        y el agua y a los costados la sal. Amasas un toque y le sumas la manteca y
+                        después el queso. Terminas de amasar hasta que este bien integrado todo y
+                        dejas descansar la masa 20 minutos tapada con un trapo húmedo.</p>
+                      <p>Cortas piezas del tamaño de una ciruela (ponele) y formas bollitos. Una vez que
+                        los tengas ponelos sobre un placa aceitada o enmantecada y dejalos hasta que
+                        dupliquen volumen. Pintas con huevo diluido con leche y le pones quesito arriba
+                        para más placer 🤤. Los llevas a un horno fuerte por 15 o 20 minutos, los sacas
+                        y no te tires de cabeza a comerte la fuente entera porque te vas a quemar 🥵</p>
+                      <p>Podes saborizar con cebolla, salamin, romero, aceitunas o lo que se te ocurra
+                        porque es un pancito súper versátil bebeeeee 😘</p>
+                      <p>Amigxs veganxs reemplacen la manteca por aceite o margarina apta 🌱</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btnMine" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end MODALRECETAS-->
+    </div>
+    <!--end container-->
+
+    <!--offcanvas toggle from footer links-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasOrders" aria-labelledby="offcanvasOrdersLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasOrdersLabel">Pasos a seguir para hacer tu pedido</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card card-body">
+          <h4 class="card-title">Pedidos</h4>
+          <div class="card-text">
+            <ul class="list-group list-group-flush list-group-numbered mb-3">
+              <li class="list-group-item">Revisá nuestro <a href="catalogo.html" class="fw-bolder"
+                  target="_blank">catálogo</a></li>
+              <li class="list-group-item">Podés enviarme un <a
+                  href="https://api.whatsapp.com/send?phone=5491153438311&text=Hola!%20Me%20interesa%20saber%20m%C3%A1s%20sobre%20tus%20productos."
+                  class="fw-bolder" target="_blank">whatsapp</a> para coordinar o completá <a href="pedidos.html"
+                  class="fw-bolder" target="_blank">estos datos</a></li>
+              <li class="list-group-item">Esperá que te responda para confirmarte los costos y el pedido completo</li>
+            </ul>
+            <p><small>Todos los pedidos deben realizarse con 72 hs. de anticipación (varía según el producto y si es
+                personalizado).</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasShipping" aria-labelledby="offcanvasShippingLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasShippingLabel">Podés retirar o pedir un envío</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card card-body">
+          <h4 class="card-title">Métodos de envío</h4>
+          <div class="card-text">
+            <ul class="list-group list-group-flush list-group-numbered mb-3">
+              <li class="list-group-item">Rappi/Glovo solo en CABA/Avellaneda centro</li>
+              <li class="list-group-item">Entrega en Avellaneda centro GRATIS</li>
+              <li class="list-group-item">Retirá en mi domicilio previa coordinación SIN CARGO</li>
+            </ul>
+            <p><small>Los costos de envío son confirmados una vez que hagas en pedido.</small></p>
+            <p><small>Todos los pedidos deben realizarse con 72 hs. de anticipación (varía según el producto y si es
+                personalizado).</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasPayments" aria-labelledby="offcanvasPaymentsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasPaymentsLabel">Medios de pago para elegir</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card card-body">
+          <h4 class="card-title">Medios de pago</h4>
+          <div class="card-text">
+            <ul class="list-group list-group-flush list-group-numbered mb-3">
+              <li class="list-group-item">Tarjetas de crédito/débito (solo MercadoPago)</li>
+              <li class="list-group-item">En efectivo o QR si retirás</li>
+            </ul>
+            <p><small>Recordá que los pedidos pueden tomar hasta 72 hs. en estar listos.</small></p>
+            <p><small>Los pagos con tarjeta los procesa MercadoPago, por lo que es aconsejable que sepas usar la
+                plataforma o me pidas ayuda</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end offcanvas toggle from footer links-->
+    <!--footer-->
+    <footer class="text-center text-lg-start">
+      <!--grid container-->
+      <div class="container p-4">
+        <!--grid row-->
+        <div class="row">
+          <!--grid column-->
+          <div class="col-md-5 mx-auto mt-3">
+            <h6 class="text-uppercase mb-3 fw-bolder">Olga Pastelería</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">Pastelería clásica y tortas personalizadas</li>
+              <li class="mb-2"><i class="bi bi-geo-alt"></i> Avellaneda, Buenos Aires, Argentina</li>
+              <li class="mb-2"><i class="bi bi-whatsapp"></i> +5411-5343-8311</li>
+            </ul>
+          </div>
+          <!--clear grid column-->
+          <hr class="w-100 clearfix d-md-none" />
+          <!--grid column-->
+          <div class="col-md-5 mx-auto mt-3">
+            <h6 class="text-uppercase mb-3 fw-bolder">Pedidos e info útil</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a data-bs-toggle="offcanvas" href="#offcanvasOrders" role="button" aria-controls="offcanvasOrders">
+                  <i class="bi bi-map me-2"></i>Cómo hago mi pedido?
+                </a>
+              </li>
+              <li class="mb-2">
+                <a data-bs-toggle="offcanvas" href="#offcanvasShipping" role="button" aria-controls="offcanvasShipping">
+                  <i class="bi bi-truck me-2"></i>Envíos
+                </a>
+              </li>
+              <li class="mb-2">
+                <a data-bs-toggle="offcanvas" href="#offcanvasPayments" role="button" aria-controls="offcanvasPayments">
+                  <i class="bi bi-wallet me-2"></i>Medios de pago
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--clear grid column-->
+          <hr class="w-100 clearfix d-md-none" />
+          <!--grid column social-->
+          <div class="col-md-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 fw-bolder">Seguime!</h6>
+            <!--icon/link-->
+            <a class="btn btn-primary btn-floating m-1" href="https://www.facebook.com/pasteleriaenavellaneda/"
+              target="_blank" role="button">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <!--end icon/link-->
+            <a class="btn btn-primary btn-floating m-1" href="https://www.instagram.com/olga.pasteleria/"
+              target="_blank" role="button">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <!--end grid row-->
+      </div>
+      <!--end grid container-->
+      <!--copyright/credits grid-->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 0.75rem;">
+        © 2021 Sitio maquetado por
+        <a class="btn btn-secondary btn-sm btn-floating m-1" style="background-color: #ac2bac;"
+          href="https://github.com/pattjj" target="_blank" role="button">
+          <i class="bi bi-github me-2"></i><span>Patricio Juarez</span>
+        </a>
+        usando
+        <a class="btn btn-secondary btn-sm btn-floating m-1" style="background-color: #ac2bac;"
+          href="https://getbootstrap.com/" target="_blank" role="button">
+          <i class="bi bi-bootstrap me-2"></i><span>Bootstrap v5.02</span>
+        </a>
+      </div>
+      <!--end copyright/credits grid-->
+    </footer>
+    <!--end footer-->
+
+    <!--whatsapp icon-->
+    <a href="https://api.whatsapp.com/send?phone=5491153438311&text=Hola!%20Me%20interesa%20saber%20m%C3%A1s%20sobre%20tus%20productos."
+      id="whatsappFloatingButton" target="_blank">
+      <svg viewBox="0 0 399 400" class="partSvg whatsAppAlt">
+        <path
+          d="M290.242 239.702c-4.952-2.478-29.302-14.458-33.842-16.113-4.539-1.653-7.84-2.478-11.142 2.479-3.302 4.957-12.794 16.114-15.683 19.42-2.888 3.304-5.777 3.72-10.73 1.239-4.952-2.479-20.91-7.708-39.827-24.582-14.723-13.133-24.663-29.35-27.551-34.309-2.89-4.958-.31-7.638 2.17-10.108 2.229-2.22 4.954-5.785 7.43-8.677 2.476-2.89 3.301-4.958 4.952-8.262 1.65-3.306.826-6.197-.413-8.676-1.238-2.478-11.143-26.857-15.27-36.775-4.02-9.656-8.103-8.348-11.143-8.5-2.885-.144-6.19-.175-9.492-.175-3.301 0-8.667 1.24-13.207 6.197-4.54 4.958-17.334 16.94-17.334 41.317 0 24.378 17.746 47.927 20.223 51.233 2.477 3.306 34.922 53.33 84.606 74.782 11.815 5.104 21.04 8.15 28.233 10.433 11.864 3.77 22.66 3.238 31.194 1.962 9.516-1.42 29.302-11.98 33.43-23.548 4.126-11.57 4.126-21.486 2.888-23.552-1.238-2.066-4.54-3.305-9.492-5.785m-90.366 123.386h-.066c-29.563-.011-58.557-7.954-83.851-22.964l-6.016-3.57L47.59 352.91l16.642-60.793-3.917-6.234c-16.49-26.229-25.201-56.545-25.188-87.674.036-90.833 73.941-164.732 164.814-164.732 44.003.015 85.367 17.173 116.472 48.314 31.104 31.14 48.224 72.531 48.207 116.55-.037 90.841-73.942 164.747-164.745 164.747m140.21-304.959C302.666 20.663 252.899.022 199.875 0 90.623 0 1.705 88.913 1.662 198.197c-.015 34.935 9.112 69.033 26.458 99.093L0 399.999l105.075-27.562c28.95 15.791 61.547 24.115 94.72 24.125h.082c109.24 0 198.165-88.92 198.21-198.207.02-52.962-20.578-102.761-58-140.226">
+        </path>
+      </svg>
+    </a>
+    <!--end whatsapp icon-->
+
+  </main>
+
+  <!-- Bootstrap core JavaScript-->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

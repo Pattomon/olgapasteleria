@@ -1,122 +1,200 @@
 @charset "UTF-8";
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   background-color: #FFFFFF;
-  color: #1a1108;
+  color: #39201c;
 }
-body a {
-  color: #1a1108;
-  font-weight: bolder;
-} 
-body a:hover {
-  color:#1a1108bd;
+a {
+  color: #39201c;
+  text-decoration: none;
 }
-body .dividerHeader {
-  /*separador presente en todas las páginas*/
-  margin: 5rem 7rem 5rem 7rem;
-  border-width: 0.2rem;
-  border-color:#1A1108;
+a:hover {
+  color: #3a211db3; /*same font as body font color with 0.7 op*/
 }
 
-/*Navbar & header*/
+/*Navbar & header --- can't see anything changed
+header {
+  margin-bottom: 6rem;
+}
+*/
+
 header nav {
-  background-color: #ffffff;
-  border-bottom: solid 0.2rem #000000;
+  background-color: #ffffff; /*change to solid color*/
+  border-bottom: 4mm ridge #39201ccc; /*change opacity, here at 0.8*/
 } 
-header button:hover {
-  background-color:#ebebeb;
-}
-.navbar {
-  color: black;
-}
-.nav-item {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: larger;
-}
 .nav-link {
-  font-weight: normal;
+  font-size: 120%;
+}
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 100%;
+  }
 }
 
-/* Carousel base class */
-.carousel {
+.mainMine { /*custom main-margin for no-carousel page, positioning content down the fixed-top navbar*/
+  margin-top: 10rem;
+}
+
+.carousel {/*custom main-margin for pages with carousel, equals custom main-margin*/
+  margin-top: 6rem;
   margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 25%;
+  top: 25%;
   z-index: 10;
+  color: #39201C;
+  right: 25%;
+  left: 25%;
 }
-/* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 32rem;/*height declared because img positioning is absolute*/
 }
 .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  min-height: 32rem;/*changed to min height since images are 16:9*/
+  min-height: 32rem;/*change min-height since images are 16:9, change to 32rem*/
+}
+footer {
+  margin-top: 4rem;
+  background-color: #39201cb3;
+  color:#ffffff;
+}
+footer a {
+  color:#ffffff;
+}
+footer a:hover {
+  font-weight: bolder;
+}
+/*custom class*/
+.fontPacific {
+  font-family: 'Pacifico', cursive;
+}
+.fontNune {
+  font-family: 'Nunito', sans-serif;
+}
+.transparentWhite {
+  background-color:#fbf4f4e6;
 }
 
-/*clases del index*/
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
+/*edit css for btns*/
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
   }
 }
-
-.featContent-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
+.btn:hover {
+color: inherit; /*avoids bg-color added per styling when you don't click the btn*/
 }
-
-/*resp css featcontent en index*/
-@media (min-width: 40em) {
-  .featContent-heading {
-    font-size: 50px;
-  } 
+.btn-check:focus + .btn, .btn:focus {
+outline: 0;
+box-shadow: 0 0 0 0.25rem #39201c40;
 }
-
-@media (min-width: 62em) {
-  .featContent {
-    margin: auto 8rem auto 8rem; }
-  .featContent-heading {
-    margin-top: 2rem;
-  }
+.btn:disabled, .btn.disabled, fieldset:disabled .btn {
+pointer-events: none;
+opacity: 0.65;
 }
-
-/*botones Ver Recetas/Cerrar Modal/Ver preparación*/
-.btn-secondary {
-  background-color:#1A1108;
+/*rewritting btn-primary class*/
+.btn-primary {
+color: #ffffff;
+background-color: #39201C;
+border-color: #39201C;
+}
+.btn-primary:hover {
+color: #ffffff;
+background-color: #624540;
+border-color: #624540;
+}
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+color: #ffffff;
+background-color: #624540;
+border-color: #624540;
+box-shadow: 0 0 0 0.25rem #62454040
+}
+.btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+color: #ffffff;
+background-color: #624540;
+border-color: #624540;
+}
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+box-shadow: 0 0 0 0.25rem #62454040;
+}
+.btn-primary:disabled, .btn-primary.disabled {
+color: #ffffff;
+background-color: #624540;
+border-color: #624540;
+}
+/*along with btn-outline-primary class*/
+.btn-outline-primary {
+color: #39201C;/*btn-primary colorset*/
+border-color: #39201C;
+}
+.btn-outline-primary:hover {
+color: #ffffff;
+background-color: #39201C;
+border-color: #39201C;
+}
+.btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
+box-shadow: 0 0 0 0.25rem #39201c80;
+}
+.btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+color: #ffffff;
+background-color: #39201C;
+border-color: #39201C;
+}
+.btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
+box-shadow: 0 0 0 0.25rem #39201c80;
+}
+.btn-outline-primary:disabled, .btn-outline-primary.disabled {
+color: #39201C;
+background-color: transparent;
+}
+/*btn-close for X in modals/offcanvas/pop-ups*/
+.btn-close {
+color: inherit;
+}
+.btn-close:hover {
+color: #624540;
+text-decoration: none;
+opacity: 0.75;
+}
+.btn-close:focus {
+outline: 0;
+box-shadow: 0 0 0 0.25rem #39201c80;
+opacity: 1;
+}
+.btn-close:disabled, .btn-close.disabled {
+pointer-events: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+opacity: 0.25;
+}
+/*btn default for "close" block or "see more", overrides partially, use of !important may be needed*/
+.btnMine {
+  background-color:#1F100F;
   color:#ffffff;
   font-weight: bolder;
   border-style: none;
-  box-shadow: none !important;
+  box-shadow: none;
 }
-
-.btn-secondary:active {
-  background-color:#57392ece !important;
+.btnMine:hover {
+  color:#ffffff;
+  background-color:#774A62;
+  box-shadow: 0 0 0 0.25rem #39201c80;
 }
-
-.btn-secondary:hover {
-  background-color:#57392ece;
+.btnMine:focus {
+  color:#ffffff;
+  background-color:#774A62;
 }
-
-.btn-secondary:focus {
-  background-color:#1A1108;
+.btnMine:active {
+  color:#ffffff;
+  background-color:#774A62;
+  box-shadow: 0 0 0 0.25rem #39201c80;
 }
-
+/*end edit css for btns*/
 
 
 /*card decks*/
@@ -126,13 +204,21 @@ header button:hover {
   .card-deck .card div {
     background-color: #ffffff;}
     .card-deck .card div .card-title {
-      font-family: 'Ubuntu', sans-serif; }
+      font-family: 'Pacifico', cursive;}
     .card-deck .card div button a {
       /*aplica solo al link incluido en la card del index, que no es un modal*/
       text-decoration: none;
       color: inherit; }
 
-
+/*<!--=====FAVICON ======-->
+    <link rel="shortcut icon" href="Img/favicon.png" type="image/png">
+    <!---============ REMIX ICON ============---->
+    
+    add favicon and fix carousels media resolution/position
+    change color offcanvas lit-group
+    add mrgin top to elements inside main to balance carousel positioning  margin-top: 4rem;
+}*/
+    
 
 /*recetas.html*/
 .tabdeRecetas {
@@ -141,18 +227,63 @@ header button:hover {
     border-style: none;
     box-shadow: none; }
   .tabdeRecetas a.active {
-    background-color: #1A1108;
+    background-color: #1F100F;
     font-weight: bolder;
     border-style: none; }
   .tabdeRecetas a:hover {
-    background-color: #1a1108b6;
-    color: #F5F5F3; }
+    background-color: #624540;
+    color: #FFFFFF; }
 
 /*solo para cambiar texto de cards en el tabpane de Recetas*/
 .tab-pane .card {
   text-align: left; }
+.tab-pane .card-group .card-footer i {
+  text-align: right;
+}
 
-/*whatsapp icon para contactarse*/
+
+
+/*just test root and css variables
+:root {
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+}
+a {
+  color: var(--bs-mine);
+}
+*/
+
+/*rules btns & links
+.linkkMine:link {
+  color: #ffffff;
+  background-color: #402B26;
+  border-color: #402B26;
+  box-shadow: none !important;
+}
+.linkkMine:visited {
+  background-color: rgb(76, 51, 46, 0.7);
+}
+.btnMine {
+  color: #ffffff;
+  background-color: #402B26;
+  border-color: #402B26;
+  font-weight: bolder;
+
+}
+.btnMine:focus {
+  background-color: red;
+  box-shadow: none !important; agregarla solo si puedo cambiar border de botones
+}
+.btnMine:hover {
+  background-color: #402b26cc;
+}
+.btnMine:active {
+  background-color: #402b26cc;
+}
+*/
+
+
+/*floating wsp icon*/
 #whatsappFloatingButton {
   position: fixed;
   bottom: 25px;
@@ -170,7 +301,7 @@ header button:hover {
 
 #whatsappFloatingButton svg {
   width: 36px;
-  fill: #fff; }
+  fill: #ffffff;}
 
 @-webkit-keyframes whatsappButtonAnimation {
   0% {
@@ -194,5 +325,4 @@ header button:hover {
     height: 36px; }
   #whatsappFloatingButton svg {
     width: 20px; } }
-
-/*End whatsapp icon flotante para contactarse*/
+/*end floating wsp icon*/

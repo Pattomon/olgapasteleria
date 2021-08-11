@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Olga Pastelería. Las mejores tortas en tu mesa - Pastelería clásica y vegana a pedido - Tortas personalizadas - Entregas y envíos en Avellaneda y CABA">
-<meta name="keywords"  content="pasteleria, pastel, pasteles, tortas, postres, postre, tortas personalizadas, tortas personalizadas zona sur, tortas personalizadas a domicilio, tortas personalizadas en avellaneda, tortas a pedido, pedido tortas zona sur, pedidos CABA">
-<title>Olga Pastelería - Las mejores tortas en tu mesa</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<!--Google fonts-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-<!--Fin google fonts-->
-<link rel="stylesheet" type="text/css" href="assets/css/styles.css"> <!--stylesheet-->
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Olga Pastelería. Las mejores tortas en tu mesa - Pastelería clásica y vegana a pedido - Tortas personalizadas - Entregas y envíos en Avellaneda y CABA">
+  <meta name="keywords"
+    content="pasteleria, pastel, pasteles, tortas, postres, postre, tortas personalizadas, tortas personalizadas zona sur, tortas personalizadas a domicilio, tortas personalizadas en avellaneda, tortas a pedido, pedido tortas zona sur, pedidos CABA">
+  <title>Olga - Las mejores tortas en tu mesa</title>
+  <link rel="shortcut icon" href="media/oldlogoolga.png" type="image/x-icon">
+  <!--bs-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--BS Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <!--Fin google fonts-->
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <!--stylesheet-->
 </head>
-
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top"> <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-light p-4 fixed-top">
+      <!-- Fixed navbar -->
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <img src="media/logotransparente.svg" width="95" height="95" title="Logo Home Icon" alt="Logo Olga Pasteleria">
+        <a class="navbar-brand" href="#">Olga
+          <!--<img src="media/logotransparente.svg" width="70" height="70" title="Logo Home Icon" alt="Logo Olga Pasteleria">-->
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Página Principal</a>
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./views/recetas.html">Recetas</a>
@@ -45,152 +57,275 @@
               <a class="nav-link" href="./views/quienesolga.html">Quién es Olga</a>
             </li>
           </ul>
+          <span class="navbar-text" style="font-size: 0.75rem;">
+            <i class="bi bi-whatsapp me-1"></i>+5411-5343-8311
+          </span>
         </div>
       </div>
     </nav>
   </header>
 
-  <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <!--carousel for index only-->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="media/bannersmisc/berrycake.png" title="Berrycake banner" alt="Berrycake banner">
+        <img src="media/bannersmisc/berrycake.png" title="Recetas banner" alt="Recetas banner">
         <div class="container">
-          <div class="carousel-caption bg-light p-3 rounded text-start">
-            <h1>Deleitate con mis recetas</h1>
-            <p>Podés ver algunas de mis recetas más deliciosas</p>
-            <p><a class="btn btn-lg btn-secondary" href="./views/recetas.html">Entrá a ver!</a></p>
+          <div class="carousel-caption d-none d-md-block rounded transparentWhite p-5">
+            <!--d-none display:none hides caption in smaller than md-->
+            <h1 class="fontPacific mb-3">Nuestras recetas</h1>
+            <p>Nuestras mejores recetas para que hagas en casa y disfrutes</p>
+            <a class="btn btn-primary fw-bolder btn-lg mt-3 w-50" href="./views/recetas.html">Entrá a ver!</a>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="media/bannersmisc/budinesss.png" title="Sorteo Budines banner" alt="Sorteo budines banner">
+        <img src="media/bannersmisc/budinesss.png" title="DinamicNews" alt="Cosas de Olga">
         <div class="container">
-          <div class="carousel-caption bg-light p-3 rounded">
-            <h1>Super sorteo!</h1>
-            <p>Este mes sorteamos budines a quienes pidan hasta el día 12/06!</p>
-            <button type="button" class="btn btn-lg btn-secondary" data-bs-toggle="modal" data-bs-target="#sorteoMod">
-              Registrate
-            </button>
+          <div class="carousel-caption d-none d-md-block rounded transparentWhite p-5">
+            <h1 class="fontPacific mb-3">Super sorteo!</h1>
+            <p>Este mes sorteamos budines a quienes pidan hasta el día 12/09!</p>
+            <button type="button" class="btn btn-primary fw-bolder btn-lg mt-3 w-50" data-bs-toggle="modal"
+              data-bs-target="#modalfromCarousel">Registrate</button>
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <img src="media/bannersmisc/salty.png" title="Catálogo banner" alt="Catálogo banner">
         <div class="container">
-          <div class="carousel-caption bg-light p-3 rounded text-end">
-            <h1>Nuestro catálogo disponible para vos!</h1>
-            <p>Tentate con nuestros productos y pedimos lo que más te tiente</p>
-            <p><a class="btn btn-lg btn-secondary" href="./views/catalogo.html">Mirá nuestro catálogo!</a></p>
+          <div class="carousel-caption d-none d-md-block rounded transparentWhite p-5">
+            <h1 class="fontPacific mb-3">Nuestro catálogo</h1>
+            <p>Tentate con nuestros productos y pedinos lo que más te tiente</p>
+            <a class="btn btn-primary fw-bolder btn-lg mt-3 w-50" href="./views/catalogo.html">Entrá</a>
           </div>
         </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="bi bi-caret-left-fill" aria-hidden="true"></span>
       <span class="visually-hidden">Anterior</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="bi bi-caret-right-fill" aria-hidden="true"></span>
       <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
-
-
-<main role="main">
-
-<div class="container">
-
-<!--start MODALDEFAULT-->
-<div class="modal fade" id="sorteoMod" tabindex="-1" aria-labelledby="sorteoMod" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="sorteoMod">Sorteo por mi cumple!</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        El sorteo finalizó, estate atento a los próximos!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+  <!--end carousel for index only-->
+  <!--modal from carousel button-->
+  <div class="modal fade" id="modalfromCarousel" tabindex="-1" aria-labelledby="modalfromCarousel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalfromCarousellabel">Sorteo por mi cumple!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">El sorteo finalizó, estate atento a los próximos!</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btnMine" data-bs-dismiss="modal">Cerrar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <!--modal from carousel button-->
 
+  <main role="main">
 
-
-<!--end MODALDEFAULT-->
-
-  <hr class="dividerHeader">
-    
-<!--Featured Content-->
-  <div class="row featContent">
-    <div class="col-md-7">
-      <h2 class="featContent-heading">Cómo hago mi pedido? <span class="text-muted">Ayuda!</span></h2>
-      <p class="lead">Recordá que todos los pedidos se toman por whatsapp.</p>
-      <p>Si necesitás más info, podés entrar a nuestro <a href="./views/pedidos.html">formulario</a> y ver los pasos a seguir!</p>
-      <button type="button" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#sorteoMod">HOLA</button>
+    <div class="container">
+      <!--Featured Content-->
+      <div class="row">
+        <div class="col-md-7">
+          <h2>Cómo hago mi pedido? <span class="text-muted">Ayuda!</span></h2>
+          <p class="lead">Recordá que todos los pedidos se toman por whatsapp.</p>
+          <p>Si necesitás más info, podés entrar a nuestro <a href="./views/pedidos.html">formulario</a> y ver los pasos
+            a seguir!</p>
+        </div>
+        <div class="col-md-5">
+          <img src="media/featcontentpedidos.jpg" title="Pedidos" alt="Pedidos" class="img-fluid mx-auto rounded">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7 order-md-2">
+          <!--changes order on pic/text columns-->
+          <h2>Quién es Olga? <span class="text-muted">Un poquito de historia.</span></h2>
+          <p class="lead">Un proyecto que nació gracias a las enseñanzas de la persona más importante en mi vida.</p>
+          <p><a href="./views/quienesolga.html">Ver más...</a></p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="media/olga1.jpg" title="Olga" alt="Olga foto" class="img-fluid mx-auto rounded">
+        </div>
+      </div><!-- end featured content -->
     </div>
-    <div class="col-md-5">
-      <img src="media/featcontentpedidos.jpg" title="Imagen Pedidos" alt="Pedidos"
-          class="bd-placeholder-img bd-placeholder-img-lg featContent-image img-fluid mx-auto rounded"
-          width="500" height="500" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <!--end container-->
+
+    <!--offcanvas toggle from footer links-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasOrders" aria-labelledby="offcanvasOrdersLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasOrdersLabel">Pasos a seguir para hacer tu pedido</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card card-body">
+          <h4 class="card-title">Pedidos</h4>
+          <div class="card-text">
+            <ul class="list-group list-group-flush list-group-numbered mb-3">
+              <li class="list-group-item">Revisá nuestro <a href="./views/catalogo.html" class="fw-bolder"
+                  target="_blank">catálogo</a></li>
+              <li class="list-group-item">Podés enviarme un <a
+                  href="https://api.whatsapp.com/send?phone=5491153438311&text=Hola!%20Me%20interesa%20saber%20m%C3%A1s%20sobre%20tus%20productos."
+                  class="fw-bolder" target="_blank">whatsapp</a> para coordinar o completá <a href="./views/pedidos.html"
+                  class="fw-bolder" target="_blank">estos datos</a></li>
+              <li class="list-group-item">Esperá que te responda para confirmarte los costos y el pedido completo</li>
+            </ul>
+            <p><small>Todos los pedidos deben realizarse con 72 hs. de anticipación (varía según el producto y si es
+                personalizado).</small></p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <hr class="dividerHeader">
-
-  <div class="row featContent">
-    <div class="col-md-7 order-md-2">
-      <h2 class="featContent-heading">Quién es Olga? <span class="text-muted">Un poquito de historia.</span></h2>
-      <p class="lead">Un proyecto que nació gracias a las enseñanzas de la persona más importante en mi vida.</p><p><a href="./views/quienesolga.html">Ver más...</a></p>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasShipping" aria-labelledby="offcanvasShippingLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasShippingLabel">Podés retirar o pedir un envío</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card card-body">
+          <h4 class="card-title">Métodos de envío</h4>
+          <div class="card-text">
+            <ul class="list-group list-group-flush list-group-numbered mb-3">
+              <li class="list-group-item">Rappi/Glovo solo en CABA/Avellaneda centro</li>
+              <li class="list-group-item">Entrega en Avellaneda centro GRATIS</li>
+              <li class="list-group-item">Retirá en mi domicilio previa coordinación SIN CARGO</li>
+            </ul>
+            <p><small>Los costos de envío son confirmados una vez que hagas en pedido.</small></p>
+            <p><small>Todos los pedidos deben realizarse con 72 hs. de anticipación (varía según el producto y si es
+                personalizado).</small></p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-5 order-md-1">
-      <img src="media/olga1.jpg" title ="Olga" alt="Olga foto"
-          class="bd-placeholder-img bd-placeholder-img-lg featContent-image img-fluid mx-auto rounded"
-          width="500" height="500" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasPayments" aria-labelledby="offcanvasPaymentsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasPaymentsLabel">Medios de pago para elegir</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card card-body">
+          <h4 class="card-title">Medios de pago</h4>
+          <div class="card-text">
+            <ul class="list-group list-group-flush list-group-numbered mb-3">
+              <li class="list-group-item">Tarjetas de crédito/débito (solo MercadoPago)</li>
+              <li class="list-group-item">En efectivo o QR si retirás</li>
+            </ul>
+            <p><small>Recordá que los pedidos pueden tomar hasta 72 hs. en estar listos.</small></p>
+            <p><small>Los pagos con tarjeta los procesa MercadoPago, por lo que es aconsejable que sepas usar la
+                plataforma o me pidas ayuda</small></p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-<!-- end featured content -->
+    <!--end offcanvas toggle from footer links-->
+    <!--footer-->
+    <footer class="text-center text-lg-start">
+      <!--grid container-->
+      <div class="container p-4">
+        <!--grid row-->
+        <div class="row">
+          <!--grid column-->
+          <div class="col-md-5 mx-auto mt-3">
+            <h6 class="text-uppercase mb-3 fw-bolder">Olga Pastelería</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">Pastelería clásica y tortas personalizadas</li>
+              <li class="mb-2"><i class="bi bi-geo-alt"></i> Avellaneda, Buenos Aires, Argentina</li>
+              <li class="mb-2"><i class="bi bi-whatsapp"></i> +5411-5343-8311</li>
+            </ul>
+          </div>
+          <!--clear grid column-->
+          <hr class="w-100 clearfix d-md-none" />
+          <!--grid column-->
+          <div class="col-md-5 mx-auto mt-3">
+            <h6 class="text-uppercase mb-3 fw-bolder">Pedidos e info útil</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a data-bs-toggle="offcanvas" href="#offcanvasOrders" role="button" aria-controls="offcanvasOrders">
+                  <i class="bi bi-map me-2"></i>Cómo hago mi pedido?
+                </a>
+              </li>
+              <li class="mb-2">
+                <a data-bs-toggle="offcanvas" href="#offcanvasShipping" role="button" aria-controls="offcanvasShipping">
+                  <i class="bi bi-truck me-2"></i>Envíos
+                </a>
+              </li>
+              <li class="mb-2">
+                <a data-bs-toggle="offcanvas" href="#offcanvasPayments" role="button" aria-controls="offcanvasPayments">
+                  <i class="bi bi-wallet me-2"></i>Medios de pago
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--clear grid column-->
+          <hr class="w-100 clearfix d-md-none" />
+          <!--grid column social-->
+          <div class="col-md-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 fw-bolder">Seguime!</h6>
+            <!--icon/link-->
+            <a class="btn btn-primary btn-floating m-1" href="https://www.facebook.com/pasteleriaenavellaneda/"
+              target="_blank" role="button">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <!--end icon/link-->
+            <a class="btn btn-primary btn-floating m-1" href="https://www.instagram.com/olga.pasteleria/"
+              target="_blank" role="button">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <!--end grid row-->
+      </div>
+      <!--end grid container-->
+      <!--copyright/credits grid-->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 0.75rem;">
+        © 2021 Sitio maquetado por
+        <a class="btn btn-secondary btn-sm btn-floating m-1" style="background-color: #ac2bac;"
+          href="https://github.com/pattjj" target="_blank" role="button">
+          <i class="bi bi-github me-2"></i><span>Patricio Juarez</span>
+        </a>
+        usando
+        <a class="btn btn-secondary btn-sm btn-floating m-1" style="background-color: #ac2bac;"
+          href="https://getbootstrap.com/" target="_blank" role="button">
+          <i class="bi bi-bootstrap me-2"></i><span>Bootstrap v5.02</span>
+        </a>
+      </div>
+      <!--end copyright/credits grid-->
+    </footer>
+    <!--end footer-->
 
-
-</div><!--end container-->
-<hr class="dividerHeader">
-
-
-<!--footer-->
-<footer class="container" style="font-family: 'Ubuntu', sans-serif;">
-  <p>
-    <a href="#">
-      <img src="media/icons/chevron-upwards.svg" width="35" height="35" title="Back to top" alt="Back to top icon">
+    <!--whatsapp icon-->
+    <a href="https://api.whatsapp.com/send?phone=5491153438311&text=Hola!%20Me%20interesa%20saber%20m%C3%A1s%20sobre%20tus%20productos."
+      id="whatsappFloatingButton" target="_blank">
+      <svg viewBox="0 0 399 400" class="partSvg whatsAppAlt">
+        <path
+          d="M290.242 239.702c-4.952-2.478-29.302-14.458-33.842-16.113-4.539-1.653-7.84-2.478-11.142 2.479-3.302 4.957-12.794 16.114-15.683 19.42-2.888 3.304-5.777 3.72-10.73 1.239-4.952-2.479-20.91-7.708-39.827-24.582-14.723-13.133-24.663-29.35-27.551-34.309-2.89-4.958-.31-7.638 2.17-10.108 2.229-2.22 4.954-5.785 7.43-8.677 2.476-2.89 3.301-4.958 4.952-8.262 1.65-3.306.826-6.197-.413-8.676-1.238-2.478-11.143-26.857-15.27-36.775-4.02-9.656-8.103-8.348-11.143-8.5-2.885-.144-6.19-.175-9.492-.175-3.301 0-8.667 1.24-13.207 6.197-4.54 4.958-17.334 16.94-17.334 41.317 0 24.378 17.746 47.927 20.223 51.233 2.477 3.306 34.922 53.33 84.606 74.782 11.815 5.104 21.04 8.15 28.233 10.433 11.864 3.77 22.66 3.238 31.194 1.962 9.516-1.42 29.302-11.98 33.43-23.548 4.126-11.57 4.126-21.486 2.888-23.552-1.238-2.066-4.54-3.305-9.492-5.785m-90.366 123.386h-.066c-29.563-.011-58.557-7.954-83.851-22.964l-6.016-3.57L47.59 352.91l16.642-60.793-3.917-6.234c-16.49-26.229-25.201-56.545-25.188-87.674.036-90.833 73.941-164.732 164.814-164.732 44.003.015 85.367 17.173 116.472 48.314 31.104 31.14 48.224 72.531 48.207 116.55-.037 90.841-73.942 164.747-164.745 164.747m140.21-304.959C302.666 20.663 252.899.022 199.875 0 90.623 0 1.705 88.913 1.662 198.197c-.015 34.935 9.112 69.033 26.458 99.093L0 399.999l105.075-27.562c28.95 15.791 61.547 24.115 94.72 24.125h.082c109.24 0 198.165-88.92 198.21-198.207.02-52.962-20.578-102.761-58-140.226">
+        </path>
+      </svg>
     </a>
-    &middot; &copy; 2021 &middot;
-    <a href="https://www.instagram.com/olga.pasteleria/" target="_blank">
-      <img src="media/icons/instagram-icon.svg" width="35" height="35" title="Instagram" alt="Instagram icon">
-    </a>
-  </p>
-</footer>
-<!--end footer-->
+    <!--end whatsapp icon-->
 
-<!--whatsapp icon-->
-<a href="https://api.whatsapp.com/send?phone=5491153438311&text=Hola!%20Me%20interesa%20saber%20m%C3%A1s%20sobre%20tus%20productos." id="whatsappFloatingButton"> 
-  <svg viewBox="0 0 399 400" class="partSvg whatsAppAlt">
-    <path d="M290.242 239.702c-4.952-2.478-29.302-14.458-33.842-16.113-4.539-1.653-7.84-2.478-11.142 2.479-3.302 4.957-12.794 16.114-15.683 19.42-2.888 3.304-5.777 3.72-10.73 1.239-4.952-2.479-20.91-7.708-39.827-24.582-14.723-13.133-24.663-29.35-27.551-34.309-2.89-4.958-.31-7.638 2.17-10.108 2.229-2.22 4.954-5.785 7.43-8.677 2.476-2.89 3.301-4.958 4.952-8.262 1.65-3.306.826-6.197-.413-8.676-1.238-2.478-11.143-26.857-15.27-36.775-4.02-9.656-8.103-8.348-11.143-8.5-2.885-.144-6.19-.175-9.492-.175-3.301 0-8.667 1.24-13.207 6.197-4.54 4.958-17.334 16.94-17.334 41.317 0 24.378 17.746 47.927 20.223 51.233 2.477 3.306 34.922 53.33 84.606 74.782 11.815 5.104 21.04 8.15 28.233 10.433 11.864 3.77 22.66 3.238 31.194 1.962 9.516-1.42 29.302-11.98 33.43-23.548 4.126-11.57 4.126-21.486 2.888-23.552-1.238-2.066-4.54-3.305-9.492-5.785m-90.366 123.386h-.066c-29.563-.011-58.557-7.954-83.851-22.964l-6.016-3.57L47.59 352.91l16.642-60.793-3.917-6.234c-16.49-26.229-25.201-56.545-25.188-87.674.036-90.833 73.941-164.732 164.814-164.732 44.003.015 85.367 17.173 116.472 48.314 31.104 31.14 48.224 72.531 48.207 116.55-.037 90.841-73.942 164.747-164.745 164.747m140.21-304.959C302.666 20.663 252.899.022 199.875 0 90.623 0 1.705 88.913 1.662 198.197c-.015 34.935 9.112 69.033 26.458 99.093L0 399.999l105.075-27.562c28.95 15.791 61.547 24.115 94.72 24.125h.082c109.24 0 198.165-88.92 198.21-198.207.02-52.962-20.578-102.761-58-140.226"></path>
-  </svg>
-</a><!--whatsapp icon-->
+  </main>
 
-</main>
-
-<!-- Bootstrap core JavaScript-->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-      
+  <!-- Bootstrap core JavaScript-->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
