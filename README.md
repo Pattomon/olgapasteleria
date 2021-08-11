@@ -1,3 +1,3 @@
 # olgapasteleria
-Proyecto maquetado de Recetario online
-Update a bootstrap 5 en progreso 21/7/21
+Proyecto maquetado de emprendimiento de pastelería
+Update a bootstrap v5.02 en progreso
