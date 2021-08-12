@@ -12,12 +12,6 @@ a:hover {
   color: #3a211db3; /*same font as body font color with 0.7 op*/
 }
 
-/*Navbar & header --- can't see anything changed
-header {
-  margin-bottom: 6rem;
-}
-*/
-
 header nav {
   background-color: #ffffff; /*change to solid color*/
   border-bottom: 4mm ridge #39201ccc; /*change opacity, here at 0.8*/
@@ -210,16 +204,6 @@ opacity: 0.25;
       text-decoration: none;
       color: inherit; }
 
-/*<!--=====FAVICON ======-->
-    <link rel="shortcut icon" href="Img/favicon.png" type="image/png">
-    <!---============ REMIX ICON ============---->
-    
-    add favicon and fix carousels media resolution/position
-    change color offcanvas lit-group
-    add mrgin top to elements inside main to balance carousel positioning  margin-top: 4rem;
-}*/
-    
-
 /*recetas.html*/
 .tabdeRecetas {
   text-align: center; }
@@ -243,7 +227,7 @@ opacity: 0.25;
 
 
 
-/*just test root and css variables
+/*apply vars in root for custom css
 :root {
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;

@@ -68,35 +68,38 @@
   <main role="main" class="mainMine">
 
     <div class="container">
-
-      <!--form-->
       <!--alert-->
       <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>No olvides aclarar lo que necesites en el campo requerido! Te contactaré por whatsapp cuando me llegue
+        <strong>No olvides aclarar lo que necesites en el campo requerido! Te contactaré por whatsapp cuando me
+          llegue
           tu pedido para confirmar todo!</strong>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
-      <!--start form-->
-      <div class="row no-gutters">
-        <form action="siteorders.html" method="post" class="col-md-7 mb-3">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="nombre_apellido">Nombre y apellido</label>
+      <!--form grid-->
+      <div class="row">
+        <!--form-->
+        <form class="col-md-7">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="nombre_apellido" class="form-label">Nombre y apellido</label>
               <input type="text" class="form-control" id="nombre_apellido" placeholder="Nombre y apellido">
             </div>
-            <div class="form-group col-md-5">
-              <label for="email">Dejá tu email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="email@ejemplo.com">
+            <div class="col-md-5 mb-3">
+              <label for="email" class="form-label">Dejá tu email</label>
+              <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com">
             </div>
           </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="aceptaconfirmar" name="aceptaconfirmar" value="1">
-            <label class="form-check-label" for="aceptaconfirmar">Recibir confirmación del pedido por email</label>
+          <div class="row ms-1 mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="aceptaconfirmar">
+              <label class="form-check-label" for="aceptaconfirmar">Recibir confirmación del pedido por
+                email</label>
+            </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="listadoproductos">Elegí el postre que te interesa</label>
-              <select multiple class="form-control" id="listadoproductos">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="listadoproductos" class="form-label">Elegí el postre que te interesa</label>
+              <select class="form-select" multiple aria-label="listado productos">
                 <option>Carrot Cake</option>
                 <option>La Inimputable</option>
                 <option>Mousse de Chocolate</option>
@@ -112,50 +115,54 @@
                 <option>Grisines</option>
               </select>
             </div>
-            <div class="form-group col-md-5">
-              <label for="sizefordessert">Tamaño de la porción</label>
-              <select class="form-control" id="sizefordessert">
+            <div class="col-md-5 mb-3">
+              <label for="sizefordessert" class="form-label">Tamaño de la porción</label>
+              <select class="form-select" id="sizefordessert" aria-label="tamaño de la porcion">
                 <option value="standard">Regular (torta 8 porciones)</option>
                 <option value="individual">Individual (lingote 3 porciones)</option>
                 <option value="extralarge">XL (torta 12 porciones)</option>
               </select>
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-11">
-              <label for="shippingselect">Forma de envío</label>
-              <select class="form-control" id="shippingselect">
+          <div class="row">
+            <div class="col-md-11 mb-3">
+              <label for="shippingselect" class="form-label">Forma de envío</label>
+              <select class="form-select" id="shippingselect" aria-label="forma de envio">
                 <option value="domicilio">Envío a domicilio (consultar precio)</option>
                 <option value="entrega">Entrega en Avellaneda GRATIS</option>
                 <option value="mensajeria">Mensajería/Rappi/Glovo</option>
               </select>
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-11">
-              <label for="notasadicionales">Dejanos un comentario sobre lo que necesites del pedido!</label>
-              <textarea class="form-control" id="notasadicionales" rows="3"></textarea>
+          <div class="row">
+            <div class="col-md-11 mb-3">
+              <label for="notasadicionales" class="form-label">Dejanos un comentario sobre lo que necesites
+                del pedido!</label>
+              <textarea class="form-control" id="notasadicionales" aria-label="comentarios del pedido"
+                rows="3"></textarea>
             </div>
           </div>
-          <div class="form-row">
-            <button type="submit" class="btn btnMine col-md-11">Enviar</button>
+          <div class="row">
+            <div class="col-11 mb-3">
+              <button type="submit" class="btn btnMine col-12">Enviar pedido</button>
+            </div>
           </div>
-
-
         </form>
         <!--end form-->
         <div class="col-md-5">
           <div class="card card-body">
-            <h4 class="card-title">Cómo hago mi pedido?</h4>
+            <h4 class="card-title">Tené en cuenta lo siguiente!</h4>
             <div class="card-text">
               <ul class="list-group list-group-flush mb-3">
-                <li class="list-group-item">1. Revisá nuestro <a href="catalogo.html" target="_blank">catálogo</a></li>
-                <li class="list-group-item">2. Completá el formulario en esta página</li>
+                <li class="list-group-item">1. Revisá nuestro <a href="catalogo.html" class="fw-bolder"
+                    target="_blank">catálogo</a></li>
+                <li class="list-group-item">2. Completá el formulario que ves acá</li>
                 <li class="list-group-item">3. Me contactaré para confirmarte los detalles</li>
               </ul>
               <p><small>Los envíos por Rappi/Glovo son solo en CABA/Avellaneda centro.</small></p>
               <p><small>Los costos de envío son confirmados una vez que hagas en pedido.</small></p>
-              <p><small>Todos los pedidos deben realizarse con 72 hs. de anticipación (varía según el producto y si es
+              <p><small>Todos los pedidos deben realizarse con 72 hs. de anticipación (varía según el producto
+                  y si es
                   personalizado).</small></p>
               <p><small>Si preferís comunicarte directamente, podés escribirme por <a
                     href="https://api.whatsapp.com/send?phone=5491153438311&text=Hola!%20Me%20interesa%20saber%20m%C3%A1s%20sobre%20tus%20productos."
@@ -164,6 +171,7 @@
           </div>
         </div>
       </div>
+      <!--end form grid-->
     </div>
     <!--end container-->
 
